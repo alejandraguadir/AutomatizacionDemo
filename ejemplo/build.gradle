@@ -1,0 +1,65 @@
+group 'co.com.choucair.ejemplo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+buildscript {
+    repositories {
+        mavenLocal()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:3.3.2")
+    }
+}
+ext{
+    serenityVersion = '3.3.2'
+}
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+dependencies {
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
+    implementation group: 'junit', name: 'junit', version: '4.13.2'
+    implementation 'org.assertj:assertj-core:3.22.0'
+    implementation 'org.slf4j:slf4j-simple:1.7.33'
+    implementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
+    implementation 'net.serenity-bdd:serenity-cucumber:3.3.2'
+    implementation 'org.apache.poi:poi-ooxml:4.1.2'
+    testCompileOnly "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
+    testImplementation('io.github.bonigarcia:webdrivermanager:5.3.2')
+    implementation 'org.reflections:reflections:0.10.2'
+    implementation 'org.knowm.xchart:xchart:3.8.0'
+    implementation 'org.jfree:jfreechart:1.5.3'
+    implementation 'org.projectlombok:lombok:1.18.22'
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+task credentials(type: Test) {
+    systemProperty 'user',
+            System.getProperty('user')
+    systemProperty 'password',
+            System.getProperty('password')
+}
+
+test {
+    systemProperties = System.properties
+}

@@ -1,0 +1,845 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="es-ES" class="pro theme-azure-light full-height-page"&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt; <br/>
+  &lt;meta http-equiv="Content-Type" content="text/html;charset=utf-8"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"&gt; <br/>
+  &lt;meta name="username" content="admin"&gt; <br/>
+  &lt;link rel="home" id="ApplicationPath" href="/"&gt; <br/>
+  &lt;link rel="icon" type="image/x-icon" href="/favicon.ico"&gt; <br/>
+  &lt;link href="/DynJS.axd/CssBundle.Base.css?v=uMReg1xJK0PLstnYDCYNwQ" rel="stylesheet" type="text/css"&gt; <br/>
+  &lt;link href="/DynJS.axd/CssBundle.Site.css?v=DVLuflGt4pMDAVaSG2XmBQ" rel="stylesheet" type="text/css"&gt; <br/>
+  &lt;script type="application/json" id="ScriptCulture"&gt;{"DateOrder":"dmy","DateFormat":"dd/MM/yyyy","DateSeparator":"/","DateTimeFormat":"dd/MM/yyyy HH:mm:ss","DecimalSeparator":",","GroupSeparator":"."}&lt;/script&gt; <br/>
+  &lt;script src="/DynJS.axd/Bundle.Base.js?v=v2p4XPm-3zngJ8Hy6CVMJw" type="text/javascript"&gt;&lt;/script&gt; <br/>
+  &lt;script src="/DynJS.axd/Bundle.Site.js?v=oWcCzLD-iMrDRI9sjnvlZQ" type="text/javascript"&gt;&lt;/script&gt; <br/>
+  &lt;script src="/DynJS.axd/LocalText.Site.es-ES.Public.js?v=4WvFPwAY_ZQJ886kCWMJjA" type="text/javascript"&gt;&lt;/script&gt; <br/>
+  &lt;script type="module" src="/esm/Modules/Common/ScriptInit.js?v=e_yCLgdP_gvOZLpU_s9DzQ"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript"&gt;Q.ScriptData.set('Lookup.Administration.Language', new Q.Lookup({"idField":"LanguageId","textField":"LanguageName"}, <br/>
+[{"Id":13,"LanguageId":"ar","LanguageName":"Arabic"},{"Id":14,"LanguageId":"bn","LanguageName":"Bangla"},{"Id":6,"LanguageId":"zh-CN","LanguageName":"Chinese (Simplified)"},{"Id":24,"LanguageId":"zh-TW","LanguageName":"Chinese (Traditional)"},{"Id":15,"LanguageId":"cs","LanguageName":"Czech"},{"Id":20,"LanguageId":"nl","LanguageName":"Dutch"},{"Id":1,"LanguageId":"en","LanguageName":"English"},{"Id":10,"LanguageId":"fa","LanguageName":"Farsi"},{"Id":12,"LanguageId":"fr","LanguageName":"French"},{"Id":5,"LanguageId":"de","LanguageName":"German"},{"Id":16,"LanguageId":"hi","LanguageName":"Hindi"},{"Id":17,"LanguageId":"id","LanguageName":"Indonesian"},{"Id":7,"LanguageId":"it","LanguageName":"Italian"},{"Id":18,"LanguageId":"ja","LanguageName":"Japanese"},{"Id":19,"LanguageId":"ko","LanguageName":"Korean"},{"Id":21,"LanguageId":"pl","LanguageName":"Polish"},{"Id":8,"LanguageId":"pt","LanguageName":"Portuguese"},{"Id":9,"LanguageId":"pt-BR","LanguageName":"Portuguese (Brazil)"},{"Id":22,"LanguageId":"ro","LanguageName":"Romanian"},{"Id":2,"LanguageId":"ru","LanguageName":"Russian"},{"Id":3,"LanguageId":"es","LanguageName":"Spanish"},{"Id":23,"LanguageId":"sv","LanguageName":"Swedish"},{"Id":4,"LanguageId":"tr","LanguageName":"Turkish"},{"Id":11,"LanguageId":"vi-VN","LanguageName":"Vietnamese (Vietnam)"}]<br/>
+));&lt;/script&gt; <br/>
+  &lt;script type="text/javascript"&gt;Q.ScriptData.set('RemoteData.UserData', {"Username":"admin","DisplayName":"admin","IsAdmin":true,"Permissions":{"Administration:Security":true,"Administration:Translation":true,"Northwind:General":true,"Northwind:Customer:Delete":true,"Northwind:Customer:Modify":true,"Northwind:Customer:View":true,"Administration:DataAuditLog":true,"Administration:DataExplorer":true,"EmailClient:Mailbox":true,"Administration:EmailQueue":true,"Organization:General":true,"Organization:BusinessUnits:Management":true,"Organization:Contacts:Management":true,"Meeting:General":true,"Meeting:Management":true,"WorkLog:Lookups":true,"WorkLog:Commercial":true,"WorkLog:Customer":true,"WorkLog:Management":true,"WorkLog:Employee":true,"WorkLog:Pricing":true,"Role:Developers":true,"Role:Administrators":true,"Role:Employees":true,"Role:NorthwindUsers":true,"Role:WorkLogCustomers":true,"Role:WorkLogManagers":true}});&lt;/script&gt; <br/>
+  &lt;script type="application/json" id="RegisteredScripts"&gt;{"Lookup.Serenity.Pro.Meeting.MeetingLocation":"mso0Ik4jJvxtv21e3bMp4Q","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaColumns":"638271300205903730","Lookup.Serenity.Pro.Meeting.MeetingType":"eoIJ3heR7p-VnfJLlmgyoA","Columns.WorkLog.Customer":"638271300205903779","Form.Administration.User":"638271300205903788","Form.Serenity.Pro.Meeting.Forms.MeetingLocationForm":"638271300205903796","Form.Serenity.Pro.EmailClient.EmailCompose":"638271300205903803","Form.BasicSamples.ChangingLookupText":"638271300205903810","Lookup.WorkLog.Tasks":"638271300205903825","Lookup.WorkLog.Currency":"638271300205903831","Form.Serenity.Pro.Meeting.MeetingForm":"638271300205903841","Lookup.Distinct.Serenity.Pro.DataAuditLog.DataAuditLog.FieldName":"638271300205903852","Columns.WorkLog.Currency":"638271300205903862","Form.Serenity.Pro.EmailClient.EmailLogin":"638271300205903875","Columns.Serenity.Pro.Organization.Columns.BusinessUnitColumns":"638271300205903883","Form.Northwind.Category":"638271300205903890","Columns.Serenity.Pro.Meeting.Columns.MeetingAttendeeColumns":"638271300205903896","Form.AdvancedSamples.OrderWizard":"638271300205903902","Columns.Serenity.Pro.Meeting.Columns.MeetingDecisionRelevantColumns":"638271300205903911","Columns.Northwind.Region":"638271300205903916","Columns.Northwind.SalesByCategory":"638271300205903921","Columns.Serenity.Pro.Organization.Columns.ContactColumns":"638271300205903925","Lookup.Distinct.WorkLog.WorkLog.Month":"638271300205903935","Bundle.Base":"v2p4XPm-3zngJ8Hy6CVMJw","Bundle.Site":"oWcCzLD-iMrDRI9sjnvlZQ","Lookup.Serenity.Pro.Organization.BusinessUnit":"rcR892_RoP0kIhmb9JX7Hw","Form.Serenity.Pro.Meeting.Forms.MeetingDecisionForm":"638271300205904073","Form.Membership.SignUp":"638271300205904080","Columns.Northwind.Territory":"638271300205904084","Columns.Northwind.Category":"638271300205904087","Lookup.Northwind.OrderShipCountry":"638271300205904098","Form.Northwind.Customer":"638271300205904104","Form.WorkLog.Employee":"638271300205904111","Form.Serenity.Pro.EmailQueue.EmailQueueForm":"638271300205904115","Columns.WorkLog.EmployeePricing":"638271300205904123","Columns.Northwind.Customer":"638271300205904128","Lookup.Northwind.Region":"638271300205904138","Lookup.WorkLog.Project":"638271300205904147","Form.AdvancedSamples.InlineButtons":"638271300205904166","Lookup.Northwind.OrderShipCity":"638271300205904175","Lookup.Northwind.Supplier":"638271300205904184","Columns.Northwind.OrderDetail":"638271300205904194","Form.Administration.Language":"638271300205904199","Lookup.WorkLog.Employee":"638271300205904207","Form.BasicSamples.FilteredLookupInDetail":"638271300205904214","Form.Northwind.Supplier":"638271300205904220","Form.Northwind.Region":"638271300205904224","Columns.AdvancedSamples.CustomerGrossSales":"638271300205904228","Lookup.Administration.User":"638271300205904234","Columns.WorkLog.Invoice":"638271300205904239","Columns.Serenity.Pro.Meeting.MeetingColumns":"638271300205904243","Columns.Northwind.Supplier":"638271300205904247","Form.AdvancedSamples.DragDropSample":"638271300205904253","Form.WorkLog.Customer":"638271300205904259","Form.Northwind.Shipper":"638271300205904264","LocalText.Site.es-ES.Public":"4WvFPwAY_ZQJ886kCWMJjA","Form.Northwind.OrderDetail":"638271300205904274","TemplateBundle":"638271300205904280","Lookup.Northwind.Territory":"638271300205904287","Form.AdvancedSamples.ProductExcelImport":"638271300205904290","Lookup.Serenity.Pro.Meeting.MeetingAgendaType":"638271300205904299","Form.BasicSamples.PopulateLinkedData":"638271300205904302","Lookup.WorkLog.Customer":"638271300205904309","Form.AdvancedSamples.EnumFlagsForm":"638271300205904315","Lookup.Serenity.Pro.Organization.Contact":"xWf1JP5UjSWNZLQVnojfsg","Form.Serenity.Pro.Organization.Forms.BusinessUnitForm":"638271300205904354","Lookup.WorkLog.Invoice":"638271300205904360","Form.Membership.Login":"638271300205904364","Lookup.Northwind.CustomerCity":"H00QDrcxCRRGHzEE6x_eJQ","Columns.WorkLog.Project":"638271300205904409","Columns.AdvancedSamples.DragDropSample":"638271300205904415","Columns.Serenity.Pro.Meeting.Columns.MeetingLocationColumns":"638271300205904419","Form.Serenity.Pro.Meeting.Forms.MeetingTypeForm":"638271300205904422","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaRelevantForm":"638271300205904428","Lookup.Administration.Role":"638271300205904435","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaRelevantColumns":"638271300205904441","Lookup.Northwind.Category":"638271300205904448","CssBundle.Base.rtl":"638271300205904452","Form.Administration.Role":"638271300205904455","Lookup.Distinct.WorkLog.WorkLog.Year":"638271300205904461","Form.AdvancedSamples.MultiDatesPicker":"638271300205904465","Form.BasicSamples.LookupFilterByMultiple":"638271300205904470","Columns.WorkLog.WorkLog":"638271300205904473","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaForm":"638271300205904476","Form.WorkLog.WorkLog":"638271300205904482","Lookup.Northwind.Shipper":"YiNdQd8_0PL4hf-7NRfgUA","Form.Serenity.Pro.Meeting.Forms.MeetingDecisionRelevantForm":"638271300205904521","Columns.Serenity.Pro.Meeting.Columns.MeetingTypeColumns":"638271300205904525","Form.WorkLog.Project":"638271300205904528","Form.WorkLog.Currency":"638271300205904530","Form.WorkLog.EmployeePricing":"638271300205904556","Form.Membership.ForgotPassword":"638271300205904560","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaTypeColumns":"638271300205904567","Form.Northwind.Territory":"638271300205904571","Form.Serenity.Pro.Meeting.Forms.MeetingAttendeeForm":"638271300205904575","Lookup.Administration.Language":"6hGfCpH8wKnrLo2YJjNMFg","LocalText.Site.en-US.Public":"s8FMs411H234vuA53_TSWQ","RemoteData.Administration.ImplicitPermissions":"638271300205904607","RemoteData.UserData":"638271300205904610","Form.Northwind.Product":"638271300205904613","Form.Membership.ChangePassword":"638271300205904617","ColumnsBundle":"t7afFu8cgCcrP3NU47uEvw","Columns.Northwind.Shipper":"638271300205904625","Form.WorkLog.Invoice":"638271300205904628","Form.Northwind.Order":"638271300205904631","Lookup.Northwind.CustomerCountry":"fzyYe_rinntCcIYK5czKwg","Columns.Administration.Role":"638271300205904650","Lookup.Northwind.Employee":"8H1Y2Ngv5BTmQ93CFbbZAQ","Columns.Administration.Language":"638271300205904687","Columns.WorkLog.Employee":"638271300205904690","ColumnAndFormBundle":"-fE1EwQvWE9RIaC1dJRO0Q","Columns.Northwind.Order":"638271300205904703","CssBundle.Base":"uMReg1xJK0PLstnYDCYNwQ","Form.BasicSamples.HarcodedValues":"638271300205904711","Columns.Administration.User":"638271300205904716","FormBundle":"EE_HVUr4zU0yGMoSnfzJVg","CssBundle.Site":"DVLuflGt4pMDAVaSG2XmBQ","Form.AdvancedSamples.PickerOrder":"638271300205904729","Columns.Serenity.Pro.EmailQueue.EmailQueueColumns":"638271300205904744","Form.Serenity.Pro.DataAuditLog.DataAuditLogForm":"638271300205904749","Form.Membership.ResetPassword":"638271300205904753","Columns.BasicSamples.InlineImageInGrid":"638271300205904757","Form.AdvancedSamples.GoogleMapsForm":"638271300205904760","Form.BasicSamples.StaticTextBlock":"638271300205904763","RemoteData.Administration.PermissionKeys":"638271300205904769","Lookup.Northwind.SupplierCountry":"638271300205904775","Columns.Serenity.Pro.Meeting.Columns.MeetingDecisionColumns":"638271300205904781","Lookup.Distinct.Serenity.Pro.DataAuditLog.DataAuditLog.Tablename":"638271300205904787","Columns.Serenity.Pro.DataAuditLog.DataAuditLogColumns":"638271300205904791","Form.Serenity.Pro.Organization.Forms.ContactForm":"638271300205904794","Columns.Northwind.Product":"638271300205904798","Lookup.Northwind.Customer":"bNveuCTbu5QGZ6flIvz9nQ","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaTypeForm":"638271300205904817","Lookup.Northwind.Product":"Jfc2HwfVzYltLgT9Yu_YWg","CssBundle.Pages/Dashboard":"-ZPKnLcVg--c7ytj7WiH9w","RemoteData.LocalText":"-246639395"}&lt;/script&gt; <br/>
+  &lt;title&gt;Reuniones - StartSharp&lt;/title&gt; <br/>
+ &lt;/head&gt; <br/>
+ &lt;body id="s-Page" class=" " data-fhrouteinit="true"&gt; <br/>
+  &lt;div id="PageBackground" style="display: none"&gt;&lt;/div&gt; <br/>
+  &lt;aside class="s-sidebar" id="s-sidebar"&gt; <br/>
+   &lt;div class="s-sidebar-band"&gt; <br/>
+    &lt;ul class="s-sidebar-band-groups"&gt; <br/>
+     &lt;li class="active"&gt; &lt;a class="s-sidebar-band-link" href="#s_sidebar_group1" title="StartSharp"&gt; &lt;i class="s-sidebar-band-icon fa fa-home"&gt;&lt;/i&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+     &lt;li class=""&gt; &lt;a class="s-sidebar-band-link" href="#s_sidebar_group2" title="Administration"&gt; &lt;i class="s-sidebar-band-icon fa fa-tools"&gt;&lt;/i&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+    &lt;/ul&gt; <br/>
+    &lt;div class="s-sidebar-band-middle"&gt; <br/>
+     &lt;div class="s-sidebar-band-branding"&gt; <br/>
+      &lt;img class="s-site-logo-img s-sidebar-band-logo"&gt; &lt;span class="s-sidebar-band-title"&gt;Start&lt;/span&gt;&lt;span class="s-sidebar-band-title2"&gt;Sharp&lt;/span&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;ul class="s-sidebar-band-actions"&gt; <br/>
+     &lt;li&gt; <br/>
+      &lt;div class="dropdown dropend"&gt; &lt;a href="javascript:;" class="s-sidebar-band-link s-language-selection-link" data-bs-toggle="dropdown" title="switch language"&gt; &lt;i class="s-sidebar-band-icon fa fa-language"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+       &lt;ul class="dropdown-menu s-language-selection-menu"&gt; <br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="ar" href="javascript:;"&gt;Arabic&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="bn" href="javascript:;"&gt;Bangla&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="zh-CN" href="javascript:;"&gt;Chinese (Simplified)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="zh-TW" href="javascript:;"&gt;Chinese (Traditional)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="cs" href="javascript:;"&gt;Czech&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="nl" href="javascript:;"&gt;Dutch&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="en" href="javascript:;"&gt;English&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="fa" href="javascript:;"&gt;Farsi&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="fr" href="javascript:;"&gt;French&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="de" href="javascript:;"&gt;German&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="hi" href="javascript:;"&gt;Hindi&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="id" href="javascript:;"&gt;Indonesian&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="it" href="javascript:;"&gt;Italian&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="ja" href="javascript:;"&gt;Japanese&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="ko" href="javascript:;"&gt;Korean&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="pl" href="javascript:;"&gt;Polish&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="pt" href="javascript:;"&gt;Portuguese&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="pt-BR" href="javascript:;"&gt;Portuguese (Brazil)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="ro" href="javascript:;"&gt;Romanian&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="ru" href="javascript:;"&gt;Russian&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="es" href="javascript:;"&gt;Spanish&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="sv" href="javascript:;"&gt;Swedish&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="tr" href="javascript:;"&gt;Turkish&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="vi-VN" href="javascript:;"&gt;Vietnamese (Vietnam)&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;/ul&gt; <br/>
+      &lt;/div&gt; &lt;/li&gt; <br/>
+     &lt;li&gt; <br/>
+      &lt;div class="dropdown dropend"&gt; &lt;a href="javascript:;" class="s-sidebar-band-link s-theme-selection-link" data-bs-toggle="dropdown" title="switch theme"&gt; &lt;i class="s-sidebar-band-icon fa fa-fill-drip"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+       &lt;ul class="dropdown-menu s-theme-selection-menu"&gt; <br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-theme="azure-light" href="javascript:;"&gt;Azure (Light)&lt;/a&gt;&lt;/li&gt; <br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-theme="cosmos-dark" href="javascript:;"&gt;Cosmos (Dark)&lt;/a&gt;&lt;/li&gt; <br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-theme="glassy-light" href="javascript:;"&gt;Glassy (Light)&lt;/a&gt;&lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+      &lt;/div&gt; &lt;/li&gt; <br/>
+     &lt;li&gt; <br/>
+      &lt;div class="dropdown dropend"&gt; &lt;a href="javascript:;" class="s-sidebar-band-link s-user-profile-link" data-bs-toggle="dropdown" title="admin"&gt; &lt;i class="s-sidebar-band-icon fa fa-user"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+       &lt;div class="dropdown-menu dropdown-menu-md s-user-profile-menu"&gt; <br/>
+        &lt;div class="s-user-card p-1 mb-2 text-center border-bottom"&gt; <br/>
+         &lt;h2 class="s-user-avatar fs-1 mb-0"&gt; &lt;i class="fa fa-user"&gt;&lt;/i&gt; &lt;/h2&gt; <br/>
+         &lt;p class="s-user-info fs-6 mb-1"&gt; admin &lt;/p&gt; <br/>
+        &lt;/div&gt; &lt;a class="dropdown-item" href="/Account/ChangePassword"&gt; &lt;em class="icon fa fa-key"&gt;&lt;/em&gt;&lt;span&gt; Cambiar contraseña&lt;/span&gt; &lt;/a&gt; &lt;!--#if (OpenIdClient)--&gt; &lt;a class="dropdown-item" href="/Account/ExternalLogins"&gt; &lt;em class="icon fa fa-link"&gt;&lt;/em&gt;&lt;span&gt;External Logins&lt;/span&gt; &lt;/a&gt; &lt;!--#endif--&gt; &lt;a class="dropdown-item" href="/Account/Signout"&gt; &lt;em class="icon fa fa-sign-out-alt"&gt;&lt;/em&gt;&lt;span&gt; Cerrar sesión&lt;/span&gt; &lt;/a&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; &lt;/li&gt; <br/>
+     &lt;li class="s-sidebar-pane-toggle"&gt; &lt;a href="javascript:;" class="s-sidebar-band-link s-sidebar-pane-toggle-link" title="toggle sidebar"&gt; &lt;i class="s-sidebar-band-icon fa fa-angle-double-left"&gt;&lt;/i&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+    &lt;/ul&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="s-sidebar-pane"&gt; <br/>
+    &lt;div id="s-sidebar-search" class="s-sidebar-search m-3"&gt; &lt;i class="fa fa-search fa-flip-horizontal s-sidebar-search-icon"&gt;&lt;/i&gt; <br/>
+     &lt;input id="s-sidebar-search-input" type="text" class="w-100 s-sidebar-search-input" placeholder="Buscar"&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div class="s-sidebar-groups"&gt; <br/>
+     &lt;div class="s-sidebar-group active" id="s_sidebar_group1"&gt; <br/>
+      &lt;h5 class="s-sidebar-group-title"&gt;StartSharp&lt;/h5&gt; <br/>
+      &lt;ul class="s-sidebar-menu" id="s_sidebar_menu1"&gt; <br/>
+       &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/"&gt; &lt;i class="s-sidebar-icon fa fa-tachometer"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Tablero&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;li class="s-sidebar-item s-sidebar-section has-children"&gt; &lt;h6 class="s-sidebar-section-title"&gt;Módulos de demostración&lt;/h6&gt; <br/>
+        &lt;ul id="nav_menu1_2" class="s-sidebar-section-menu"&gt; <br/>
+         &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_1" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-anchor"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Northwind&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+          &lt;ul id="nav_menu1_2_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2"&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Customer"&gt; &lt;i class="s-sidebar-icon fa fa-credit-card"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Clientes&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Order"&gt; &lt;i class="s-sidebar-icon fa fa-shopping-cart"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Pedidos&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Product"&gt; &lt;i class="s-sidebar-icon fa fa-cube"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Productos&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Supplier"&gt; &lt;i class="s-sidebar-icon fa fa-truck"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Proveedores&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Shipper"&gt; &lt;i class="s-sidebar-icon fa fa-ship"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Transportistas&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Category"&gt; &lt;i class="s-sidebar-icon fa fa-folder-o"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Categorías&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Region"&gt; &lt;i class="s-sidebar-icon fa fa-map-o"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Regiones&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Territory"&gt; &lt;i class="s-sidebar-icon fa fa-puzzle-piece"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Territorios&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Reports"&gt; &lt;i class="s-sidebar-icon fa fa-files-o"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Informes&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;/ul&gt; &lt;/li&gt; <br/>
+         &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_2" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-magic"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Muestras básicas&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+          &lt;ul id="nav_menu1_2_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2"&gt; <br/>
+           &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_2_1" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Diálogos&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+            &lt;ul id="nav_menu1_2_2_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2"&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/ChartInDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Gráfico en un diálogo&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/CloneableEntityDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Diálogo de entidad clonable&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/DefaultValuesInNewDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Valores predeterminados en el diálogo nuevo&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/DialogBoxes"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cuadros de diálogo&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/EntityDialogAsPanel/11077"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Diálogo de entidad como panel&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/GetInsertedRecordId"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Obtener el ID de registro insertado&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/OtherFormInTab"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Otro formulario en pestaña&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/OtherFormInTabOneBar"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Otro formulario, una barra de herramientas&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/PopulateLinkedData"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Poblar datos vinculados&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/ReadOnlyDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Diálogo de sólo lectura&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/SerialAutoNumber"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Numeración automática serie&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_2_2" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Editores&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+            &lt;ul id="nav_menu1_2_2_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2"&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/ChangingLookupText"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cambiar el texto de búsqueda&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/FilteredLookupInDetailDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Búsqueda filtrada en detalle&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/LookupFilterByMultipleValues"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Filtro de búsqueda por múltiples valores&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/SelectWithHardcodedValues"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Seleccionar con valores codificados&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/StaticTextBlock"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Bloque de texto estático&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_2_3" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cuadrículas&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+            &lt;ul id="nav_menu1_2_2_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2"&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/CustomLinksInGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Enlaces personalizados en la cuadrícula&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/EnablingRowSelection"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Habilitar la selección de filas&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/GroupingAndSummariesInGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Agrupación y sum&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/GridFilteredByCriteria"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cuadrícula filtrada por criterios&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/InitialValuesForQuickFilters"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Valor inicial para filtrado rápido&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/InlineActionButtons"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Botones de acción en línea&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/InlineImageInGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Imagen en línea en cuadrícula&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/RemovingAddButton"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Eliminar el botón Agregar&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/ViewWithoutID"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Ver sin ID&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/BasicSamples/WrappedHeaders"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Encabezados envueltos&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_2_4" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Dynamic Navigation&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+            &lt;ul id="nav_menu1_2_2_4" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2"&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Product?cat=1"&gt; &lt;i class="s-sidebar-icon icon-folder-alt"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Beverages&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Product?cat=2"&gt; &lt;i class="s-sidebar-icon icon-folder-alt"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Condiments&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Product?cat=3"&gt; &lt;i class="s-sidebar-icon icon-folder-alt"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Confections&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Product?cat=4"&gt; &lt;i class="s-sidebar-icon icon-folder-alt"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Dairy Products&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Product?cat=5"&gt; &lt;i class="s-sidebar-icon icon-folder-alt"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Grains/Cereals&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Product?cat=6"&gt; &lt;i class="s-sidebar-icon icon-folder-alt"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Meat/Poultry&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Product?cat=7"&gt; &lt;i class="s-sidebar-icon icon-folder-alt"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Produce&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Northwind/Product?cat=8"&gt; &lt;i class="s-sidebar-icon icon-folder-alt"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Seafood&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt; &lt;/li&gt; <br/>
+          &lt;/ul&gt; &lt;/li&gt; <br/>
+         &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_3" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-star premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Muestras avanzadas&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+          &lt;ul id="nav_menu1_2_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2"&gt; <br/>
+           &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_3_1" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Tablas de datos&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+            &lt;ul id="nav_menu1_2_3_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3"&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/BasicInit"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Inicialización básica&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/ServerSide"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Fuente del lado del servidor&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_3_2" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Editores&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+            &lt;ul id="nav_menu1_2_3_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3"&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/InputWithInlineButtons"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Entrada con botones en línea&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/MultiDatesPicker"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Selector de fechas múltiples&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/ProductPicker"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Selector de productos&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/EnumFlagsEditor"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Editor de banderas de enumeración&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/GoogleMapsEditor"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Editor de Google Maps&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_3_3" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Formularios&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+            &lt;ul id="nav_menu1_2_3_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3"&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/BootstrapFormList"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Formulario Bootstrap&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/EntityGridDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Diálogo de cuadrícula de entidad&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/OrderWizard"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Asistente de pedidos&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_3_4" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cuadriculas&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+            &lt;ul id="nav_menu1_2_3_4" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3"&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/AutoColumnWidth"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Ancho de columna automático&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/CardView"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Vista de tarjeta&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/CustomizableSummaries"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Resúmenes personalizables&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/CancellableBulkAction"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Acción masiva cancelable&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/ConditionalFormatting"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Formato condicional&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/DragDropGrouping"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Arrastrar y soltar agrupación&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/DragDropInTreeGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Arrastrar y soltar en la cuadrícula de árbol&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/ExcelStyleFilters"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Filtrado estilo Excel&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/InlineEditing"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Edición en línea&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/LongRunningAction"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Acción de largo plazo&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/ProductExcelImport"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Importación de productos de Excel&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/QuickFilterCustomization"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Personalización de filtro rápido&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/SplitMasterDetail"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cuadrículas de detalle maestro divididas&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/StoredProcedureGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cuadrícula de procedimiento almacenado&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/TreeGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cuadrícula de árbol&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_3_5" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Misceláneo&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+            &lt;ul id="nav_menu1_2_3_5" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3"&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/DataAuditLog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Registro de auditoría de datos&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/DataExplorer"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Explorador de datos&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/EmailClient/Mailbox"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cliente de correo electrónico (IMAP)&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/AdvancedSamples/IdleTimeout"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Tiempo de inactividad (sesión) agotado&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt; &lt;/li&gt; <br/>
+          &lt;/ul&gt; &lt;/li&gt; <br/>
+         &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_2_4" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-code"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;UI Elements&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+          &lt;ul id="nav_menu1_2_4" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2"&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Serenity.Demo.AdvancedSamples/UIElements/Components"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Components&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Serenity.Demo.AdvancedSamples/UIElements/Icons"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Icons&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Serenity.Demo.AdvancedSamples/UIElements/Tabs"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Tabs &amp; Accordion&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;/ul&gt; &lt;/li&gt; <br/>
+        &lt;/ul&gt; &lt;/li&gt; <br/>
+       &lt;li class="s-sidebar-item s-sidebar-section active has-children"&gt; &lt;h6 class="s-sidebar-section-title"&gt;Características Pro&lt;/h6&gt; <br/>
+        &lt;ul id="nav_menu1_3" class="s-sidebar-section-menu"&gt; <br/>
+         &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_3_1" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-sitemap premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Organización&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+          &lt;ul id="nav_menu1_3_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3"&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Organization/BusinessUnit"&gt; &lt;i class="s-sidebar-icon fa fa-sitemap"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Unidades de negocio&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Organization/Contact"&gt; &lt;i class="s-sidebar-icon fa fa-address-book"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Contactos&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;/ul&gt; &lt;/li&gt; <br/>
+         &lt;li class="s-sidebar-item active has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_3_2" data-bs-toggle="collapse" aria-expanded="true"&gt; &lt;i class="s-sidebar-icon fa fa-comments premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Reunión&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+          &lt;ul id="nav_menu1_3_2" class="s-sidebar-menu collapse show" data-bs-parent="#nav_menu1_3"&gt; <br/>
+           &lt;li class="s-sidebar-item active"&gt; &lt;a class="s-sidebar-link" href="/Meeting/Meeting"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Reuniones&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Meeting/MeetingAgendaType"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Tipos de agenda de reuniones&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Meeting/MeetingLocation"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Ubicaciones de reuniones&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Meeting/MeetingType"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Tipos de reuniones&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+          &lt;/ul&gt; &lt;/li&gt; <br/>
+         &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_3_3" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-hourglass-end premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Registro de trabajo&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+          &lt;ul id="nav_menu1_3_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3"&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/WorkLog/WorkLog"&gt; &lt;i class="s-sidebar-icon fa fa-clock-o"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Registros de trabajo&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/WorkLog/Invoice"&gt; &lt;i class="s-sidebar-icon fa fa-file-text"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Facturas&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+           &lt;li class="s-sidebar-item has-children"&gt; &lt;a class="s-sidebar-link" href="#nav_menu1_3_3_3" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Configuración&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt; <br/>
+            &lt;ul id="nav_menu1_3_3_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3_3"&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/WorkLog/Employee"&gt; &lt;i class="s-sidebar-icon fa fa-users"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Empleados&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/WorkLog/Customer"&gt; &lt;i class="s-sidebar-icon fa fa-user"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Clientes&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/WorkLog/Project"&gt; &lt;i class="s-sidebar-icon fa fa-book"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Proyectos&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/WorkLog/EmployeePricing"&gt; &lt;i class="s-sidebar-icon fa fa-envelope"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Precios&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+             &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/WorkLog/Currency"&gt; &lt;i class="s-sidebar-icon fa fa-usd"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Monedas&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+            &lt;/ul&gt; &lt;/li&gt; <br/>
+          &lt;/ul&gt; &lt;/li&gt; <br/>
+        &lt;/ul&gt; &lt;/li&gt; <br/>
+      &lt;/ul&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="s-sidebar-group" id="s_sidebar_group2"&gt; <br/>
+      &lt;h5 class="s-sidebar-group-title"&gt;Administración&lt;/h5&gt; <br/>
+      &lt;ul class="s-sidebar-menu" id="s_sidebar_menu2"&gt; <br/>
+       &lt;li class="s-sidebar-item s-sidebar-section has-children"&gt; &lt;h6 class="s-sidebar-section-title"&gt;General&lt;/h6&gt; <br/>
+        &lt;ul id="nav_menu2_1" class="s-sidebar-section-menu"&gt; <br/>
+         &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/DataAuditLog"&gt; &lt;i class="s-sidebar-icon fa fa-history premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Registro de auditoría de datos&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/DataExplorer"&gt; &lt;i class="s-sidebar-icon fa fa-database premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Explorador de datos&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/EmailQueue"&gt; &lt;i class="s-sidebar-icon fa fa-envelope-o premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cola de correo electrónico&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Administration/ExceptionLog/" target="_blank"&gt; &lt;i class="s-sidebar-icon fa fa-ban"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Registro de excepciones&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;/ul&gt; &lt;/li&gt; <br/>
+       &lt;li class="s-sidebar-item s-sidebar-section has-children"&gt; &lt;h6 class="s-sidebar-section-title"&gt;Localización&lt;/h6&gt; <br/>
+        &lt;ul id="nav_menu2_2" class="s-sidebar-section-menu"&gt; <br/>
+         &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Administration/Language"&gt; &lt;i class="s-sidebar-icon fa fa-comments"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Idiomas&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Administration/Translation"&gt; &lt;i class="s-sidebar-icon fa fa-comment-o"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Traducciones&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;/ul&gt; &lt;/li&gt; <br/>
+       &lt;li class="s-sidebar-item s-sidebar-section has-children"&gt; &lt;h6 class="s-sidebar-section-title"&gt;Seguridad&lt;/h6&gt; <br/>
+        &lt;ul id="nav_menu2_3" class="s-sidebar-section-menu"&gt; <br/>
+         &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Administration/Role"&gt; &lt;i class="s-sidebar-icon fa fa-lock"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Roles&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+         &lt;li class="s-sidebar-item"&gt; &lt;a class="s-sidebar-link" href="/Administration/User"&gt; &lt;i class="s-sidebar-icon fa fa-users"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Gestión de usuarios&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;/ul&gt; &lt;/li&gt; <br/>
+      &lt;/ul&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/aside&gt; <br/>
+  &lt;header class="navbar sticky-top s-mobile-header"&gt; &lt;button class="s-sidebar-toggler" type="button" id="s-sidebar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"&gt; &lt;i class="fa fa-bars"&gt;&lt;/i&gt; &lt;/button&gt; <br/>
+   &lt;div class="s-mobile-header-branding"&gt; <br/>
+    &lt;img class="s-site-logo-img s-mobile-header-logo"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;ul class="s-mobile-header-actions"&gt; <br/>
+    &lt;li&gt; <br/>
+     &lt;div class="dropdown"&gt; &lt;a href="javascript:;" class="s-mobile-header-link s-language-selection-link" data-bs-toggle="dropdown" title="switch language"&gt; &lt;i class="s-mobile-header-icon fa fa-language"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+      &lt;ul class="dropdown-menu dropdown-menu-end s-language-selection-menu"&gt; <br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="ar" href="javascript:;"&gt;Arabic&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="bn" href="javascript:;"&gt;Bangla&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="zh-CN" href="javascript:;"&gt;Chinese (Simplified)&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="zh-TW" href="javascript:;"&gt;Chinese (Traditional)&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="cs" href="javascript:;"&gt;Czech&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="nl" href="javascript:;"&gt;Dutch&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="en" href="javascript:;"&gt;English&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="fa" href="javascript:;"&gt;Farsi&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="fr" href="javascript:;"&gt;French&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="de" href="javascript:;"&gt;German&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="hi" href="javascript:;"&gt;Hindi&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="id" href="javascript:;"&gt;Indonesian&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="it" href="javascript:;"&gt;Italian&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="ja" href="javascript:;"&gt;Japanese&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="ko" href="javascript:;"&gt;Korean&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="pl" href="javascript:;"&gt;Polish&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="pt" href="javascript:;"&gt;Portuguese&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="pt-BR" href="javascript:;"&gt;Portuguese (Brazil)&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="ro" href="javascript:;"&gt;Romanian&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="ru" href="javascript:;"&gt;Russian&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="es" href="javascript:;"&gt;Spanish&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="sv" href="javascript:;"&gt;Swedish&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="tr" href="javascript:;"&gt;Turkish&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="vi-VN" href="javascript:;"&gt;Vietnamese (Vietnam)&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt; <br/>
+     &lt;/div&gt; &lt;/li&gt; <br/>
+    &lt;li&gt; <br/>
+     &lt;div class="dropdown"&gt; &lt;a href="javascript:;" class="s-mobile-header-link s-theme-selection-link" data-bs-toggle="dropdown" title="switch theme"&gt; &lt;i class="s-mobile-header-icon fa fa-fill-drip"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+      &lt;ul class="dropdown-menu dropdown-menu-end s-theme-selection-menu"&gt; <br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-theme="azure-light" href="javascript:;"&gt;Azure (Light)&lt;/a&gt;&lt;/li&gt; <br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-theme="cosmos-dark" href="javascript:;"&gt;Cosmos (Dark)&lt;/a&gt;&lt;/li&gt; <br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-theme="glassy-light" href="javascript:;"&gt;Glassy (Light)&lt;/a&gt;&lt;/li&gt; <br/>
+      &lt;/ul&gt; <br/>
+     &lt;/div&gt; &lt;/li&gt; <br/>
+    &lt;li&gt; <br/>
+     &lt;div class="dropdown"&gt; &lt;a href="javascript:;" class="s-mobile-header-link s-user-profile-link" data-bs-toggle="dropdown" title="admin"&gt; &lt;i class="s-mobile-header-icon fa fa-user"&gt;&lt;/i&gt; &lt;/a&gt; <br/>
+      &lt;div class="dropdown-menu dropdown-menu-md dropdown-menu-end s-user-profile-menu"&gt; <br/>
+       &lt;div class="s-user-card p-1 mb-2 text-center border-bottom"&gt; <br/>
+        &lt;h2 class="s-user-avatar fs-1 mb-0"&gt; &lt;i class="fa fa-user"&gt;&lt;/i&gt; &lt;/h2&gt; <br/>
+        &lt;p class="s-user-info fs-6 mb-1"&gt; admin &lt;/p&gt; <br/>
+       &lt;/div&gt; &lt;a class="dropdown-item" href="/Account/ChangePassword"&gt; &lt;em class="icon fa fa-key"&gt;&lt;/em&gt;&lt;span&gt; Cambiar contraseña&lt;/span&gt; &lt;/a&gt; &lt;!--#if (OpenIdClient)--&gt; &lt;a class="dropdown-item" href="/Account/ExternalLogins"&gt; &lt;em class="icon fa fa-link"&gt;&lt;/em&gt;&lt;span&gt;External Logins&lt;/span&gt; &lt;/a&gt; &lt;!--#endif--&gt; &lt;a class="dropdown-item" href="/Account/Signout"&gt; &lt;em class="icon fa fa-sign-out-alt"&gt;&lt;/em&gt;&lt;span&gt; Cerrar sesión&lt;/span&gt; &lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; &lt;/li&gt; <br/>
+   &lt;/ul&gt; <br/>
+  &lt;/header&gt; <br/>
+  &lt;main class="s-main"&gt; <br/>
+   &lt;section class="content"&gt; <br/>
+    &lt;link href="/Serenity.Pro.Organization/index.css?v=yYNH__hJGhmu6j2Zopp6Kg" rel="stylesheet" type="text/css"&gt; <br/>
+    &lt;script src="/Serenity.Pro.Organization/index.js?v=StGU1manHNZLElUR9imZcA" type="text/javascript"&gt;&lt;/script&gt; <br/>
+    &lt;link href="/Serenity.Pro.Meeting/index.css?v=Tl0jRN31GdWcux_qhz_FRA" rel="stylesheet" type="text/css"&gt; <br/>
+    &lt;script src="/Serenity.Pro.Meeting/index.js?v=1HKKDjCDh3x-heX2mOQvJw" type="text/javascript"&gt;&lt;/script&gt; <br/>
+    &lt;div id="GridDiv" class="s-Serenity-Pro-Meeting-MeetingGrid s-Pro-Meeting-MeetingGrid s-MeetingGrid s-DataGrid require-layout route-handler responsive-height"&gt;<br/>
+     &lt;div class="grid-title"&gt;<br/>
+      &lt;div class="title-text"&gt;<br/>
+       Reuniones<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="grid-toolbar s-Serenity-Toolbar s-Toolbar clearfix"&gt;<br/>
+      &lt;div class="s-QuickSearchBar"&gt;<br/>
+       &lt;span class="quick-search-icon"&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;<br/>
+       &lt;input type="text" class="s-Serenity-QuickSearchInput s-QuickSearchInput" title="Ingrese el texto para buscar" placeholder="Buscar" id="Serenity_Pro_Meeting_MeetingGrid0_QuickSearchInput"&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="tool-buttons"&gt;<br/>
+       &lt;div class="buttons-outer"&gt;<br/>
+        &lt;div class="buttons-inner"&gt;<br/>
+         &lt;div class="tool-button add-button icon-tool-button" data-action="add"&gt;<br/>
+          &lt;div class="button-outer"&gt;<br/>
+           &lt;span class="button-inner"&gt;&lt;i class="fa fa-plus-circle text-green"&gt;&lt;/i&gt; Nuevo Reunión&lt;/span&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="tool-button refresh-button icon-tool-button" data-action="refresh" title="Actualizar"&gt;<br/>
+          &lt;div class="button-outer"&gt;<br/>
+           &lt;span class="button-inner"&gt;&lt;i class="fa fa-refresh text-blue"&gt;&lt;/i&gt; &lt;/span&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="tool-button column-picker-button icon-tool-button" data-action="column-picker" title="Selector de columnas"&gt;<br/>
+          &lt;div class="button-outer"&gt;<br/>
+           &lt;span class="button-inner"&gt;&lt;i class="fa fa-th-list text-blue"&gt;&lt;/i&gt; &lt;/span&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+      &lt;div class="quick-filters-bar s-Serenity-QuickFilterBar s-QuickFilterBar clear"&gt;<br/>
+       &lt;div class="quick-filter-item"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Nombre de tipo de reunión&lt;/span&gt;<br/>
+        &lt;div class="select2-container s-Serenity-LookupEditor s-LookupEditor" id="s2id_Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_MeetingTypeId"&gt;<br/>
+         &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt; &lt;span class="select2-chosen" id="select2-chosen-1"&gt; &lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt; &lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen1" class="select2-offscreen"&gt;&lt;/label&gt;<br/>
+         &lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1"&gt;<br/>
+         &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt; <br/>
+          &lt;div class="select2-search"&gt; &lt;label for="s2id_autogen1_search" class="select2-offscreen"&gt;&lt;/label&gt; <br/>
+           &lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder=""&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;ul class="select2-results" role="listbox" id="select2-results-1"&gt; <br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;input type="text" id="Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_MeetingTypeId" placeholder=" " class="s-Serenity-LookupEditor s-LookupEditor select2-offscreen" tabindex="-1" title=""&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="quick-filter-item"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Nombre de la ubicación&lt;/span&gt;<br/>
+        &lt;div class="select2-container s-Serenity-LookupEditor s-LookupEditor" id="s2id_Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_LocationId"&gt;<br/>
+         &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt; &lt;span class="select2-chosen" id="select2-chosen-2"&gt; &lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt; &lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen2" class="select2-offscreen"&gt;&lt;/label&gt;<br/>
+         &lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-2" id="s2id_autogen2"&gt;<br/>
+         &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt; <br/>
+          &lt;div class="select2-search"&gt; &lt;label for="s2id_autogen2_search" class="select2-offscreen"&gt;&lt;/label&gt; <br/>
+           &lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-2" id="s2id_autogen2_search" placeholder=""&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;ul class="select2-results" role="listbox" id="select2-results-2"&gt; <br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;input type="text" id="Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_LocationId" placeholder=" " class="s-Serenity-LookupEditor s-LookupEditor select2-offscreen" tabindex="-1" title=""&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="quick-filter-item"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Nombre de unidad&lt;/span&gt;<br/>
+        &lt;div class="select2-container s-Serenity-Pro-Organization-BusinessUnitEditor s-Pro-Organization-BusinessUnitEditor s-BusinessUnitEditor" id="s2id_Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_UnitId"&gt;<br/>
+         &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt; &lt;span class="select2-chosen" id="select2-chosen-3"&gt; &lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt; &lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen3" class="select2-offscreen"&gt;&lt;/label&gt;<br/>
+         &lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-3" id="s2id_autogen3"&gt;<br/>
+         &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt; <br/>
+          &lt;div class="select2-search"&gt; &lt;label for="s2id_autogen3_search" class="select2-offscreen"&gt;&lt;/label&gt; <br/>
+           &lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-3" id="s2id_autogen3_search" placeholder=""&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;ul class="select2-results" role="listbox" id="select2-results-3"&gt; <br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;input type="text" id="Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_UnitId" placeholder=" " class="s-Serenity-Pro-Organization-BusinessUnitEditor s-Pro-Organization-BusinessUnitEditor s-BusinessUnitEditor select2-offscreen" tabindex="-1" title=""&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="quick-filter-item"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Organizado por&lt;/span&gt;<br/>
+        &lt;div class="select2-container s-Serenity-LookupEditor s-LookupEditor" id="s2id_Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_OrganizerContactId"&gt;<br/>
+         &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt; &lt;span class="select2-chosen" id="select2-chosen-4"&gt; &lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt; &lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen4" class="select2-offscreen"&gt;&lt;/label&gt;<br/>
+         &lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-4" id="s2id_autogen4"&gt;<br/>
+         &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt; <br/>
+          &lt;div class="select2-search"&gt; &lt;label for="s2id_autogen4_search" class="select2-offscreen"&gt;&lt;/label&gt; <br/>
+           &lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-4" id="s2id_autogen4_search" placeholder=""&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;ul class="select2-results" role="listbox" id="select2-results-4"&gt; <br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;input type="text" id="Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_OrganizerContactId" placeholder=" " class="s-Serenity-LookupEditor s-LookupEditor select2-offscreen" tabindex="-1" title=""&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="quick-filter-item"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Reportero&lt;/span&gt;<br/>
+        &lt;div class="select2-container s-Serenity-LookupEditor s-LookupEditor" id="s2id_Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_ReporterContactId"&gt;<br/>
+         &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt; &lt;span class="select2-chosen" id="select2-chosen-5"&gt; &lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt; &lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen5" class="select2-offscreen"&gt;&lt;/label&gt;<br/>
+         &lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-5" id="s2id_autogen5"&gt;<br/>
+         &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt; <br/>
+          &lt;div class="select2-search"&gt; &lt;label for="s2id_autogen5_search" class="select2-offscreen"&gt;&lt;/label&gt; <br/>
+           &lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-5" id="s2id_autogen5_search" placeholder=""&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;ul class="select2-results" role="listbox" id="select2-results-5"&gt; <br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;input type="text" id="Serenity_Pro_Meeting_MeetingGrid0_QuickFilter_ReporterContactId" placeholder=" " class="s-Serenity-LookupEditor s-LookupEditor select2-offscreen" tabindex="-1" title=""&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="grid-container slick-container ltr sleekgrid_461458 ui-widget sleek-vars" style="overflow: hidden; outline: 0px; position: relative; --sleek-row-height: 36px; --sleek-cell-height: 36px; --sleek-top-panel-height: 30px; --sleek-grouping-panel-height: 30px; --sleek-headerrow-height: 34px; --sleek-footerrow-height: 30px; --l0: 0px; --r0: 1508px; --l1: 80px; --r1: 1229px; --l2: 359px; --r2: 1084px; --l3: 504px; --r3: 945px; --l4: 643px; --r4: 800px; --l5: 788px; --r5: 655px; --l6: 933px; --r6: 516px; --l7: 1072px; --r7: 344px; --l8: 1244px; --r8: 172px; --l9: 1416px; --r9: 0px;"&gt;<br/>
+      &lt;div class="slick-focus-sink" hidefocus="" style="position:fixed;width:0!important;height:0!important;top:0;left:0;outline:0!important;" tabindex="0"&gt;&lt;/div&gt;<br/>
+      &lt;div class="slick-header ui-state-default"&gt;<br/>
+       &lt;div class="slick-header-columns ui-sortable" style="left: -1000px; width: 2595px; user-select: none;" unselectable="on"&gt;<br/>
+        &lt;div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_461458MeetingId" title="" style="width: 80px" data-c="0"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;ID&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle" draggable="true"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_461458MeetingName" title="" style="width: 279px" data-c="1"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Nombre de la reunión&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle" draggable="true"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_461458MeetingNumber" title="" style="width: 145px" data-c="2"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Número de reunión&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle" draggable="true"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_461458MeetingTypeName" title="" style="width: 139px" data-c="3"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Nombre de tipo de reunión&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle" draggable="true"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_461458StartDate" title="" style="width: 145px" data-c="4"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Fecha de inicio&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle" draggable="true"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_461458EndDate" title="" style="width: 145px" data-c="5"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Fecha de finalización&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle" draggable="true"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_461458LocationName" title="" style="width: 139px" data-c="6"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Nombre de la ubicación&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle" draggable="true"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_461458UnitName" title="" style="width: 172px" data-c="7"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Nombre de unidad&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle" draggable="true"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_461458OrganizerContactFullName" title="" style="width: 172px" data-c="8"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Organizado por&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle" draggable="true"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column ui-state-default slick-header-sortable ui-sortable-handle" id="sleekgrid_461458ReporterContactFullName" title="" style="width: 172px" data-c="9"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Reportero&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle" draggable="true"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="slick-headerrow ui-state-default" style="display: none"&gt;<br/>
+       &lt;div class="slick-headerrow-columns" style="width: 1588px;"&gt;&lt;/div&gt;<br/>
+       &lt;div style="display: block; height: 1px; position: absolute; top: 0px; left: 0px; width: 1588px;" width="1595px"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="slick-top-panel-scroller ui-state-default" style="display: none"&gt;<br/>
+       &lt;div class="slick-top-panel" style="width: 10000px"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="slick-viewport" tabindex="0" hidefocus="" style="overflow: auto; height: 323.203px;"&gt;<br/>
+       &lt;div class="grid-canvas" tabindex="0" hidefocus="" style="height: 316px; width: 1588px;"&gt;<br/>
+        &lt;div class="ui-widget-content slick-row even" style="top:0px"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/5" data-item-type="Pro.Meeting.Meeting" data-item-id="5" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;5&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/5" data-item-type="Pro.Meeting.Meeting" data-item-id="5" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;Planeacion mensual&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2"&gt;<br/>
+          12<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          Team Weekly<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          13/09/2023 01:45<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          13/09/2023 03:00<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;<br/>
+          HQ-01<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          Unidad two<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          Sara Torres<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          James Jones<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="ui-widget-content slick-row odd" style="top:36px"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/6" data-item-type="Pro.Meeting.Meeting" data-item-id="6" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;6&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/6" data-item-type="Pro.Meeting.Meeting" data-item-id="6" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;Planeacion mensual&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2"&gt;<br/>
+          12<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          Team Weekly<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          13/09/2023 01:45<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          13/09/2023 03:00<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;<br/>
+          HQ-01<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          Unidad two<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          Sara Torres<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          James Jones<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="ui-widget-content slick-row even" style="top:72px"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/1" data-item-type="Pro.Meeting.Meeting" data-item-id="1" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;1&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/1" data-item-type="Pro.Meeting.Meeting" data-item-id="1" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;Weekly Development Meeting 1&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2"&gt;<br/>
+          WDM-01<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          Team Weekly<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          20/08/2022 07:45<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          20/08/2022 09:00<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;<br/>
+          SD-01<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          R&amp;D<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          Stephen White<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          Danielle Richardson<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="ui-widget-content slick-row odd" style="top:108px"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/2" data-item-type="Pro.Meeting.Meeting" data-item-id="2" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;2&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/2" data-item-type="Pro.Meeting.Meeting" data-item-id="2" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;Weekly Development Meeting 2&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2"&gt;<br/>
+          WDM-02<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          Team Weekly<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          27/08/2022 08:45<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          27/08/2022 10:00<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;<br/>
+          SD-02<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          R&amp;D<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          Stephen White<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          Andrew White<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="ui-widget-content slick-row even" style="top:144px"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/3" data-item-type="Pro.Meeting.Meeting" data-item-id="3" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;3&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/3" data-item-type="Pro.Meeting.Meeting" data-item-id="3" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;Weekly Development Meeting 3&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2"&gt;<br/>
+          WDM-03<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          Team Weekly<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          03/09/2022 07:45<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          02/09/2022 09:00<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;<br/>
+          SD-02<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          R&amp;D<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          Haley Griffin<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          Danielle Richardson<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="ui-widget-content slick-row odd" style="top:180px"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/4" data-item-type="Pro.Meeting.Meeting" data-item-id="4" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;4&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1"&gt;<br/>
+          &lt;a href="#Pro-Meeting-Meeting/4" data-item-type="Pro.Meeting.Meeting" data-item-id="4" class="s-EditLink s-Pro-Meeting-MeetingLink"&gt;Weekly Development Meeting 4&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2"&gt;<br/>
+          WDM-04<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          Team Weekly<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          10/09/2022 06:55<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          02/09/2022 08:20<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;<br/>
+          SD-01<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          R&amp;D<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          Haley Griffin<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          Michelle Allen<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="slick-footerrow ui-state-default" style="display: none"&gt;<br/>
+       &lt;div class="slick-footerrow-columns" style="width: 1588px;"&gt;<br/>
+        &lt;div class="slick-footerrow-column l0 r0 ui-state-default align-right" data-c="0"&gt;&lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l1 r1 ui-state-default" data-c="1"&gt;&lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l2 r2 ui-state-default" data-c="2"&gt;&lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l3 r3 ui-state-default" data-c="3"&gt;&lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l4 r4 ui-state-default" data-c="4"&gt;&lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l5 r5 ui-state-default" data-c="5"&gt;&lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l6 r6 ui-state-default" data-c="6"&gt;&lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l7 r7 ui-state-default" data-c="7"&gt;&lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l8 r8 ui-state-default" data-c="8"&gt;&lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l9 r9 ui-state-default" data-c="9"&gt;&lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div style="display: block; height: 1px; position: absolute; top: 0px; left: 0px; width: 1588px;" width="1595px"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="slick-focus-sink" hidefocus="" style="position:fixed;width:0!important;height:0!important;top:0;left:0;outline:0!important;" tabindex="0"&gt;&lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="s-Serenity-SlickPager s-SlickPager slick-pg"&gt;<br/>
+      &lt;div class="slick-pg-in"&gt;<br/>
+       &lt;div class="slick-pg-grp"&gt;<br/>
+        &lt;select class="slick-pg-size" name="rp"&gt;&lt;option value="20"&gt;20&nbsp;&nbsp;&lt;/option&gt;&lt;option value="100" selected&gt;100&nbsp;&nbsp;&lt;/option&gt;&lt;option value="500"&gt;500&nbsp;&nbsp;&lt;/option&gt;&lt;option value="2500"&gt;2500&nbsp;&nbsp;&lt;/option&gt;&lt;/select&gt;<br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="slick-pg-grp slick-pg-grp-firstprev"&gt; <br/>
+        &lt;div class="slick-pg-first slick-pg-btn"&gt;<br/>
+         &lt;span class="slick-pg-btn-span"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="slick-pg-prev slick-pg-btn"&gt;<br/>
+         &lt;span class="slick-pg-btn-span"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="slick-pg-grp slick-pg-grp-control"&gt; &lt;span class="slick-pg-control"&gt; &lt;span class="slick-pg-pagetext"&gt;Página&lt;/span&gt; &lt;input id="Serenity_SlickPager2_CurrentPage" class="slick-pg-current" type="text" size="4" value="1"&gt; &lt;span class="slick-pg-pagesep"&gt;/&lt;/span&gt; &lt;span class="slick-pg-total"&gt;1&lt;/span&gt; &lt;/span&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="slick-pg-grp slick-pg-grp-nextlast"&gt; <br/>
+        &lt;div class="slick-pg-next slick-pg-btn"&gt;<br/>
+         &lt;span class="slick-pg-btn-span"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="slick-pg-last slick-pg-btn"&gt;<br/>
+         &lt;span class="slick-pg-btn-span"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="slick-pg-grp slick-pg-grp-reload"&gt; <br/>
+        &lt;div class="slick-pg-reload slick-pg-btn"&gt;<br/>
+         &lt;span class="slick-pg-btn-span"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="slick-pg-grp slick-pg-grp-stat"&gt; &lt;span class="slick-pg-stat"&gt;Mostrando desde 1 hasta 6 de 6 registros totales&lt;/span&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt; <br/>
+    &lt;script type="text/javascript"&gt;<br/>
+    jQuery(function () {<br/>
+        new Serenity.Pro.Meeting.MeetingGrid($('#GridDiv'), {}).init();<br/>
+<br/>
+        Q.initFullHeightGridPage($('#GridDiv'));<br/>
+    });<br/>
+&lt;/script&gt; <br/>
+   &lt;/section&gt; <br/>
+  &lt;/main&gt; <br/>
+  &lt;div id="cboxOverlay" style="display: none;"&gt;&lt;/div&gt;<br/>
+  &lt;div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"&gt;<br/>
+   &lt;div id="cboxWrapper"&gt;<br/>
+    &lt;div&gt;<br/>
+     &lt;div id="cboxTopLeft" style="float: left;"&gt;&lt;/div&gt;<br/>
+     &lt;div id="cboxTopCenter" style="float: left;"&gt;&lt;/div&gt;<br/>
+     &lt;div id="cboxTopRight" style="float: left;"&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div style="clear: left;"&gt;<br/>
+     &lt;div id="cboxMiddleLeft" style="float: left;"&gt;&lt;/div&gt;<br/>
+     &lt;div id="cboxContent" style="float: left;"&gt;<br/>
+      &lt;div id="cboxTitle" style="float: left;"&gt;&lt;/div&gt;<br/>
+      &lt;div id="cboxCurrent" style="float: left;"&gt;&lt;/div&gt;&lt;button type="button" id="cboxPrevious"&gt;&lt;/button&gt;&lt;button type="button" id="cboxNext"&gt;&lt;/button&gt;&lt;button id="cboxSlideshow"&gt;&lt;/button&gt;<br/>
+      &lt;div id="cboxLoadingOverlay" style="float: left;"&gt;&lt;/div&gt;<br/>
+      &lt;div id="cboxLoadingGraphic" style="float: left;"&gt;&lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="cboxMiddleRight" style="float: left;"&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div style="clear: left;"&gt;<br/>
+     &lt;div id="cboxBottomLeft" style="float: left;"&gt;&lt;/div&gt;<br/>
+     &lt;div id="cboxBottomCenter" style="float: left;"&gt;&lt;/div&gt;<br/>
+     &lt;div id="cboxBottomRight" style="float: left;"&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"&gt;&lt;/div&gt;<br/>
+  &lt;/div&gt;&lt;span role="status" aria-live="polite" class="select2-hidden-accessible"&gt;&lt;/span&gt;&lt;span role="status" aria-live="polite" class="select2-hidden-accessible"&gt;&lt;/span&gt;&lt;span role="status" aria-live="polite" class="select2-hidden-accessible"&gt;&lt;/span&gt;&lt;span role="status" aria-live="polite" class="select2-hidden-accessible"&gt;&lt;/span&gt;&lt;span role="status" aria-live="polite" class="select2-hidden-accessible"&gt;&lt;/span&gt;<br/>
+  &lt;div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="position: absolute; top: 44.9377px; left: 1010.8px; z-index: 1; display: none;"&gt;<br/>
+   &lt;div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"&gt;<br/>
+    &lt;a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="&lt;Ant"&gt;&lt;span class="ui-icon ui-icon-circle-triangle-w"&gt;&lt;Ant&lt;/span&gt;&lt;/a&gt;&lt;a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Sig&gt;"&gt;&lt;span class="ui-icon ui-icon-circle-triangle-e"&gt;Sig&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+    &lt;div class="ui-datepicker-title"&gt;<br/>
+     &lt;select class="ui-datepicker-month" data-handler="selectMonth" data-event="change"&gt;&lt;option value="0"&gt;ene&lt;/option&gt;&lt;option value="1"&gt;feb&lt;/option&gt;&lt;option value="2"&gt;mar&lt;/option&gt;&lt;option value="3"&gt;abr&lt;/option&gt;&lt;option value="4"&gt;may&lt;/option&gt;&lt;option value="5"&gt;jun&lt;/option&gt;&lt;option value="6"&gt;jul&lt;/option&gt;&lt;option value="7"&gt;ago&lt;/option&gt;&lt;option value="8" selected&gt;sep&lt;/option&gt;&lt;option value="9"&gt;oct&lt;/option&gt;&lt;option value="10"&gt;nov&lt;/option&gt;&lt;option value="11"&gt;dic&lt;/option&gt;&lt;/select&gt;&lt;select class="ui-datepicker-year" data-handler="selectYear" data-event="change"&gt;&lt;option value="1923"&gt;1923&lt;/option&gt;&lt;option value="1924"&gt;1924&lt;/option&gt;&lt;option value="1925"&gt;1925&lt;/option&gt;&lt;option value="1926"&gt;1926&lt;/option&gt;&lt;option value="1927"&gt;1927&lt;/option&gt;&lt;option value="1928"&gt;1928&lt;/option&gt;&lt;option value="1929"&gt;1929&lt;/option&gt;&lt;option value="1930"&gt;1930&lt;/option&gt;&lt;option value="1931"&gt;1931&lt;/option&gt;&lt;option value="1932"&gt;1932&lt;/option&gt;&lt;option value="1933"&gt;1933&lt;/option&gt;&lt;option value="1934"&gt;1934&lt;/option&gt;&lt;option value="1935"&gt;1935&lt;/option&gt;&lt;option value="1936"&gt;1936&lt;/option&gt;&lt;option value="1937"&gt;1937&lt;/option&gt;&lt;option value="1938"&gt;1938&lt;/option&gt;&lt;option value="1939"&gt;1939&lt;/option&gt;&lt;option value="1940"&gt;1940&lt;/option&gt;&lt;option value="1941"&gt;1941&lt;/option&gt;&lt;option value="1942"&gt;1942&lt;/option&gt;&lt;option value="1943"&gt;1943&lt;/option&gt;&lt;option value="1944"&gt;1944&lt;/option&gt;&lt;option value="1945"&gt;1945&lt;/option&gt;&lt;option value="1946"&gt;1946&lt;/option&gt;&lt;option value="1947"&gt;1947&lt;/option&gt;&lt;option value="1948"&gt;1948&lt;/option&gt;&lt;option value="1949"&gt;1949&lt;/option&gt;&lt;option value="1950"&gt;1950&lt;/option&gt;&lt;option value="1951"&gt;1951&lt;/option&gt;&lt;option value="1952"&gt;1952&lt;/option&gt;&lt;option value="1953"&gt;1953&lt;/option&gt;&lt;option value="1954"&gt;1954&lt;/option&gt;&lt;option value="1955"&gt;1955&lt;/option&gt;&lt;option value="1956"&gt;1956&lt;/option&gt;&lt;option value="1957"&gt;1957&lt;/option&gt;&lt;option value="1958"&gt;1958&lt;/option&gt;&lt;option value="1959"&gt;1959&lt;/option&gt;&lt;option value="1960"&gt;1960&lt;/option&gt;&lt;option value="1961"&gt;1961&lt;/option&gt;&lt;option value="1962"&gt;1962&lt;/option&gt;&lt;option value="1963"&gt;1963&lt;/option&gt;&lt;option value="1964"&gt;1964&lt;/option&gt;&lt;option value="1965"&gt;1965&lt;/option&gt;&lt;option value="1966"&gt;1966&lt;/option&gt;&lt;option value="1967"&gt;1967&lt;/option&gt;&lt;option value="1968"&gt;1968&lt;/option&gt;&lt;option value="1969"&gt;1969&lt;/option&gt;&lt;option value="1970"&gt;1970&lt;/option&gt;&lt;option value="1971"&gt;1971&lt;/option&gt;&lt;option value="1972"&gt;1972&lt;/option&gt;&lt;option value="1973"&gt;1973&lt;/option&gt;&lt;option value="1974"&gt;1974&lt;/option&gt;&lt;option value="1975"&gt;1975&lt;/option&gt;&lt;option value="1976"&gt;1976&lt;/option&gt;&lt;option value="1977"&gt;1977&lt;/option&gt;&lt;option value="1978"&gt;1978&lt;/option&gt;&lt;option value="1979"&gt;1979&lt;/option&gt;&lt;option value="1980"&gt;1980&lt;/option&gt;&lt;option value="1981"&gt;1981&lt;/option&gt;&lt;option value="1982"&gt;1982&lt;/option&gt;&lt;option value="1983"&gt;1983&lt;/option&gt;&lt;option value="1984"&gt;1984&lt;/option&gt;&lt;option value="1985"&gt;1985&lt;/option&gt;&lt;option value="1986"&gt;1986&lt;/option&gt;&lt;option value="1987"&gt;1987&lt;/option&gt;&lt;option value="1988"&gt;1988&lt;/option&gt;&lt;option value="1989"&gt;1989&lt;/option&gt;&lt;option value="1990"&gt;1990&lt;/option&gt;&lt;option value="1991"&gt;1991&lt;/option&gt;&lt;option value="1992"&gt;1992&lt;/option&gt;&lt;option value="1993"&gt;1993&lt;/option&gt;&lt;option value="1994"&gt;1994&lt;/option&gt;&lt;option value="1995"&gt;1995&lt;/option&gt;&lt;option value="1996"&gt;1996&lt;/option&gt;&lt;option value="1997"&gt;1997&lt;/option&gt;&lt;option value="1998"&gt;1998&lt;/option&gt;&lt;option value="1999"&gt;1999&lt;/option&gt;&lt;option value="2000"&gt;2000&lt;/option&gt;&lt;option value="2001"&gt;2001&lt;/option&gt;&lt;option value="2002"&gt;2002&lt;/option&gt;&lt;option value="2003"&gt;2003&lt;/option&gt;&lt;option value="2004"&gt;2004&lt;/option&gt;&lt;option value="2005"&gt;2005&lt;/option&gt;&lt;option value="2006"&gt;2006&lt;/option&gt;&lt;option value="2007"&gt;2007&lt;/option&gt;&lt;option value="2008"&gt;2008&lt;/option&gt;&lt;option value="2009"&gt;2009&lt;/option&gt;&lt;option value="2010"&gt;2010&lt;/option&gt;&lt;option value="2011"&gt;2011&lt;/option&gt;&lt;option value="2012"&gt;2012&lt;/option&gt;&lt;option value="2013"&gt;2013&lt;/option&gt;&lt;option value="2014"&gt;2014&lt;/option&gt;&lt;option value="2015"&gt;2015&lt;/option&gt;&lt;option value="2016"&gt;2016&lt;/option&gt;&lt;option value="2017"&gt;2017&lt;/option&gt;&lt;option value="2018"&gt;2018&lt;/option&gt;&lt;option value="2019"&gt;2019&lt;/option&gt;&lt;option value="2020"&gt;2020&lt;/option&gt;&lt;option value="2021"&gt;2021&lt;/option&gt;&lt;option value="2022"&gt;2022&lt;/option&gt;&lt;option value="2023" selected&gt;2023&lt;/option&gt;&lt;option value="2024"&gt;2024&lt;/option&gt;&lt;option value="2025"&gt;2025&lt;/option&gt;&lt;option value="2026"&gt;2026&lt;/option&gt;&lt;option value="2027"&gt;2027&lt;/option&gt;&lt;option value="2028"&gt;2028&lt;/option&gt;&lt;option value="2029"&gt;2029&lt;/option&gt;&lt;option value="2030"&gt;2030&lt;/option&gt;&lt;option value="2031"&gt;2031&lt;/option&gt;&lt;option value="2032"&gt;2032&lt;/option&gt;&lt;option value="2033"&gt;2033&lt;/option&gt;&lt;option value="2034"&gt;2034&lt;/option&gt;&lt;option value="2035"&gt;2035&lt;/option&gt;&lt;option value="2036"&gt;2036&lt;/option&gt;&lt;option value="2037"&gt;2037&lt;/option&gt;&lt;option value="2038"&gt;2038&lt;/option&gt;&lt;option value="2039"&gt;2039&lt;/option&gt;&lt;option value="2040"&gt;2040&lt;/option&gt;&lt;option value="2041"&gt;2041&lt;/option&gt;&lt;option value="2042"&gt;2042&lt;/option&gt;&lt;option value="2043"&gt;2043&lt;/option&gt;&lt;option value="2044"&gt;2044&lt;/option&gt;&lt;option value="2045"&gt;2045&lt;/option&gt;&lt;option value="2046"&gt;2046&lt;/option&gt;&lt;option value="2047"&gt;2047&lt;/option&gt;&lt;option value="2048"&gt;2048&lt;/option&gt;&lt;option value="2049"&gt;2049&lt;/option&gt;&lt;option value="2050"&gt;2050&lt;/option&gt;&lt;option value="2051"&gt;2051&lt;/option&gt;&lt;option value="2052"&gt;2052&lt;/option&gt;&lt;option value="2053"&gt;2053&lt;/option&gt;&lt;option value="2054"&gt;2054&lt;/option&gt;&lt;option value="2055"&gt;2055&lt;/option&gt;&lt;option value="2056"&gt;2056&lt;/option&gt;&lt;option value="2057"&gt;2057&lt;/option&gt;&lt;option value="2058"&gt;2058&lt;/option&gt;&lt;option value="2059"&gt;2059&lt;/option&gt;&lt;option value="2060"&gt;2060&lt;/option&gt;&lt;option value="2061"&gt;2061&lt;/option&gt;&lt;option value="2062"&gt;2062&lt;/option&gt;&lt;option value="2063"&gt;2063&lt;/option&gt;&lt;option value="2064"&gt;2064&lt;/option&gt;&lt;option value="2065"&gt;2065&lt;/option&gt;&lt;option value="2066"&gt;2066&lt;/option&gt;&lt;option value="2067"&gt;2067&lt;/option&gt;&lt;option value="2068"&gt;2068&lt;/option&gt;&lt;option value="2069"&gt;2069&lt;/option&gt;&lt;option value="2070"&gt;2070&lt;/option&gt;&lt;option value="2071"&gt;2071&lt;/option&gt;&lt;option value="2072"&gt;2072&lt;/option&gt;&lt;option value="2073"&gt;2073&lt;/option&gt;&lt;/select&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;table class="ui-datepicker-calendar"&gt;<br/>
+    &lt;thead&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;th scope="col"&gt;&lt;span title="lunes"&gt;L&lt;/span&gt;&lt;/th&gt;<br/>
+      &lt;th scope="col"&gt;&lt;span title="martes"&gt;M&lt;/span&gt;&lt;/th&gt;<br/>
+      &lt;th scope="col"&gt;&lt;span title="miércoles"&gt;X&lt;/span&gt;&lt;/th&gt;<br/>
+      &lt;th scope="col"&gt;&lt;span title="jueves"&gt;J&lt;/span&gt;&lt;/th&gt;<br/>
+      &lt;th scope="col"&gt;&lt;span title="viernes"&gt;V&lt;/span&gt;&lt;/th&gt;<br/>
+      &lt;th scope="col" class="ui-datepicker-week-end"&gt;&lt;span title="sábado"&gt;S&lt;/span&gt;&lt;/th&gt;<br/>
+      &lt;th scope="col" class="ui-datepicker-week-end"&gt;&lt;span title="domingo"&gt;D&lt;/span&gt;&lt;/th&gt;<br/>
+     &lt;/tr&gt;<br/>
+    &lt;/thead&gt;<br/>
+    &lt;tbody&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"&gt;&nbsp;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"&gt;&nbsp;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"&gt;&nbsp;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"&gt;&nbsp;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;1&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;2&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;3&lt;/a&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;4&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;5&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;6&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;7&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;8&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;9&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;10&lt;/a&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;11&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;12&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class="  ui-datepicker-current-day" data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default ui-state-active" href="#"&gt;13&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;14&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;15&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;16&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;17&lt;/a&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;18&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;19&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;20&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;21&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;22&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;23&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;24&lt;/a&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;25&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;26&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;27&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;28&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;29&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="8" data-year="2023"&gt;&lt;a class="ui-state-default" href="#"&gt;30&lt;/a&gt;&lt;/td&gt;<br/>
+      &lt;td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"&gt;&nbsp;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+    &lt;/tbody&gt;<br/>
+   &lt;/table&gt;<br/>
+   &lt;div class="ui-datepicker-buttonpane ui-widget-content"&gt;<br/>
+    &lt;button type="button" class="ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all" data-handler="today" data-event="click"&gt;Hoy&lt;/button&gt;&lt;button type="button" class="ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all" data-handler="hide" data-event="click"&gt;Cerrar&lt;/button&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div id="select2-drop-mask" class="select2-drop-mask" style="display: none;"&gt;&lt;/div&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

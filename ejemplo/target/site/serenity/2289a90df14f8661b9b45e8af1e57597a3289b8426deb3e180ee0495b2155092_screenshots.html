@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="e6bcdf7e9e1325a1513f09d4cfc828da4eef938fdac8cc539aedee06df7d535e.html">Programar Reunion</a></span>
+                > <span class="truncate-60"><a
+                    href="2289a90df14f8661b9b45e8af1e57597a3289b8426deb3e180ee0495b2155092.html">programar reunion a unidad de negocio </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 09-08-2023 13:58</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Programar Reunion </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario del serenity demo<br />
+Quiero crear una unidad de negocio<br />
+Para poder programar una reunion
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="16632833f7a31505fe35a53531aa657adfcd388806c5aa94b340690c98ff4ffa.html">Programar Reunion
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">programar reunion a unidad de negocio
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="99623eade6272f027365f7cb6c51390cf96b95fcf39fed0e4404c2c0815a424a.png" title=" actor opens the browser at https://demo.serenity.is/Account/Login/?ReturnUrl=%2F" width="1366"/>
+                <img src="99623eade6272f027365f7cb6c51390cf96b95fcf39fed0e4404c2c0815a424a.png" title=" actor opens the browser at https://demo.serenity.is/Account/Login/?ReturnUrl=%2F" width="1366"/>
+                <img src="aeffaa1d1beb99f08ee6bc282e628355e191a2598747432855d014d699b72edb.png" title=" Given el usuario inicio sesion" width="1366"/>
+                <img src="aeffaa1d1beb99f08ee6bc282e628355e191a2598747432855d014d699b72edb.png" title=" Actor realizar login" width="1366"/>
+                <img src="aeffaa1d1beb99f08ee6bc282e628355e191a2598747432855d014d699b72edb.png" title=" actor enters 'admin' into Input de admin para el login" width="1366"/>
+                <img src="aeffaa1d1beb99f08ee6bc282e628355e191a2598747432855d014d699b72edb.png" title=" actor enters 'serenity' into Input de contrasenna para el login" width="1366"/>
+                <img src="d98fdfc6129daddea1674636dc364bad2a9a073dd612469021b247d5d8e68b83.png" title=" actor enters 'serenity' into Input de contrasenna para el login (completed)" width="1366"/>
+                <img src="d98fdfc6129daddea1674636dc364bad2a9a073dd612469021b247d5d8e68b83.png" title=" actor clicks on Bot&oacute;n iniciar sesi&oacute;n" width="1366"/>
+                <img src="74e5b7b3713f7673c3880b6b787535e04210a61354be00e0402b91e329f15c1c.png" title=" actor clicks on Bot&oacute;n iniciar sesi&oacute;n (completed)" width="1366"/>
+                <img src="74e5b7b3713f7673c3880b6b787535e04210a61354be00e0402b91e329f15c1c.png" title=" Actor realizar login (completed)" width="1366"/>
+                <img src="24eff3cc993c1fa494f3ac7a52c42893ab57b01a10399ae91148cb2594f0687e.png" title=" Given el usuario inicio sesion (completed)" width="1366"/>
+                <img src="f4da9af871915f98a2f7cbc3e3ec47c28a47bb423f8da08ca392158dac625a4a.png" title=" When el usuario crea la unidad de negocio" width="1366"/>
+                <img src="f4da9af871915f98a2f7cbc3e3ec47c28a47bb423f8da08ca392158dac625a4a.png" title=" Actor unidad de negocio" width="1366"/>
+                <img src="f4da9af871915f98a2f7cbc3e3ec47c28a47bb423f8da08ca392158dac625a4a.png" title=" actor clicks on Opci&oacute;n organizaci&oacute;n" width="1366"/>
+                <img src="5ee2ba1c8e41235f448ece1aa08f4deadcd98634d072edace56eefc6bf2fd347.png" title=" actor clicks on Opci&oacute;n organizaci&oacute;n (completed)" width="1366"/>
+                <img src="5ee2ba1c8e41235f448ece1aa08f4deadcd98634d072edace56eefc6bf2fd347.png" title=" actor clicks on Opci&oacute;n unidades de negocio" width="1366"/>
+                <img src="98bcc45f05f7451e92c9cb8c63ef1996598dc0ccc0556e52ce8e1b1e91bcc951.png" title=" actor clicks on Opci&oacute;n unidades de negocio (completed)" width="1366"/>
+                <img src="98bcc45f05f7451e92c9cb8c63ef1996598dc0ccc0556e52ce8e1b1e91bcc951.png" title=" Actor unidad de negocio (completed)" width="1366"/>
+                <img src="28651a859b8321a4dd3c370ebae5008e9e33ecda722252c5f73f82341d5f1a92.png" title=" Actor crear unidad de negocio" width="1366"/>
+                <img src="28651a859b8321a4dd3c370ebae5008e9e33ecda722252c5f73f82341d5f1a92.png" title=" actor clicks on Bot&oacute;n nueva unidad de negocio" width="1366"/>
+                <img src="b05aee0a08b68095ac708a4e9b4e0a52a3b5139078702981a6c08f954d882dfc.png" title=" actor clicks on Bot&oacute;n nueva unidad de negocio (completed)" width="1366"/>
+                <img src="b05aee0a08b68095ac708a4e9b4e0a52a3b5139078702981a6c08f954d882dfc.png" title=" actor enters 'Unidad two' into Input nombre" width="1366"/>
+                <img src="551796fa59d44a9ea837a78cb93d7a5abe9ef37158113a361f04b76d63ea70eb.png" title=" actor enters 'Unidad two' into Input nombre (completed)" width="1366"/>
+                <img src="551796fa59d44a9ea837a78cb93d7a5abe9ef37158113a361f04b76d63ea70eb.png" title=" actor clicks on Input unidad" width="1366"/>
+                <img src="337ead3df7313129e0a65dc24c0ca98542c2e06e6c5d8c2c1c3c2cd50f2138ad.png" title=" actor clicks on Input unidad (completed)" width="1366"/>
+                <img src="337ead3df7313129e0a65dc24c0ca98542c2e06e6c5d8c2c1c3c2cd50f2138ad.png" title=" actor enters 'Operations' into Busca unidad" width="1366"/>
+                <img src="dfa1bb5f42dc571350c7199d89c3d64372e9c170b0891baab9757e143d74f582.png" title=" actor enters 'Operations' into Busca unidad (completed)" width="1366"/>
+                <img src="dfa1bb5f42dc571350c7199d89c3d64372e9c170b0891baab9757e143d74f582.png" title=" actor types 'TAB' in Busca unidad" width="1366"/>
+                <img src="572202444d2235cb06c2002694b6f248e3357e516a5bcb515e3fd090d3339311.png" title=" actor types 'TAB' in Busca unidad (completed)" width="1366"/>
+                <img src="572202444d2235cb06c2002694b6f248e3357e516a5bcb515e3fd090d3339311.png" title=" actor clicks on Bot&oacute;n guardar" width="1366"/>
+                <img src="572202444d2235cb06c2002694b6f248e3357e516a5bcb515e3fd090d3339311.png" title=" Actor crear unidad de negocio (completed)" width="1366"/>
+                <img src="572202444d2235cb06c2002694b6f248e3357e516a5bcb515e3fd090d3339311.png" title=" When el usuario crea la unidad de negocio (completed)" width="1366"/>
+                <img src="631f66f38a2f1d77dd0f0b0bade3c4e5a40fc4b6ded7994de15ea98b64d22a8a.png" title=" And el usuario programa la reunion" width="1366"/>
+                <img src="631f66f38a2f1d77dd0f0b0bade3c4e5a40fc4b6ded7994de15ea98b64d22a8a.png" title=" Actor seleccionar menu reunion" width="1366"/>
+                <img src="631f66f38a2f1d77dd0f0b0bade3c4e5a40fc4b6ded7994de15ea98b64d22a8a.png" title=" actor clicks on Men&uacute; reuniones" width="1366"/>
+                <img src="631f66f38a2f1d77dd0f0b0bade3c4e5a40fc4b6ded7994de15ea98b64d22a8a.png" title=" actor clicks on Men&uacute; reuniones" width="1366"/>
+                <img src="dc6f5f3c49a6ebb7443ceefc5547a27bbfc7392aa338ac51f194543adcfe828b.png" title=" actor clicks on Men&uacute; reuniones (completed)" width="1366"/>
+                <img src="dc6f5f3c49a6ebb7443ceefc5547a27bbfc7392aa338ac51f194543adcfe828b.png" title=" actor clicks on Nuevo Reuni&oacute;n" width="1366"/>
+                <img src="122482fe56dc9d10f874e219dca9c6e3b537a7299ba2ade2590b0176bd2f1770.png" title=" actor clicks on Nuevo Reuni&oacute;n (completed)" width="1366"/>
+                <img src="122482fe56dc9d10f874e219dca9c6e3b537a7299ba2ade2590b0176bd2f1770.png" title=" Actor seleccionar menu reunion (completed)" width="1366"/>
+                <img src="a14cb4cfb7a797a3eaa3dc74c99a7ce8f49cbe5cfb6cd34a7b735a749371e651.png" title=" Actor programar reunion" width="1366"/>
+                <img src="a14cb4cfb7a797a3eaa3dc74c99a7ce8f49cbe5cfb6cd34a7b735a749371e651.png" title=" actor clicks on Nombre de la reuni&oacute;n" width="1366"/>
+                <img src="4e180351406cf3279015605c2cf7cbebb7a51490b98b4c59ff5bd97f3741f9aa.png" title=" actor clicks on Nombre de la reuni&oacute;n (completed)" width="1366"/>
+                <img src="4e180351406cf3279015605c2cf7cbebb7a51490b98b4c59ff5bd97f3741f9aa.png" title=" actor enters 'Planeacion mensual' into Nombre de la reuni&oacute;n" width="1366"/>
+                <img src="c72ed660fc9cd1f35ed38a17eb5659e9d3503a787d90983930b6b7248d4c6b7c.png" title=" actor enters 'Planeacion mensual' into Nombre de la reuni&oacute;n (completed)" width="1366"/>
+                <img src="c72ed660fc9cd1f35ed38a17eb5659e9d3503a787d90983930b6b7248d4c6b7c.png" title=" actor clicks on Tipo reunion" width="1366"/>
+                <img src="c702174a6d629647c55ff41e1dfa477e38117d8a9b8009ab12c72b709985f104.png" title=" actor clicks on Tipo reunion (completed)" width="1366"/>
+                <img src="c702174a6d629647c55ff41e1dfa477e38117d8a9b8009ab12c72b709985f104.png" title=" actor enters 'Team' into Input tipo reunion" width="1366"/>
+                <img src="6268d69516765e9d38aa1483de08b1137a6c51038967a7f731cfe1b8e9c6147d.png" title=" actor enters 'Team' into Input tipo reunion (completed)" width="1366"/>
+                <img src="6268d69516765e9d38aa1483de08b1137a6c51038967a7f731cfe1b8e9c6147d.png" title=" actor types 'TAB' in Input tipo reunion" width="1366"/>
+                <img src="a81604577c93ae5a8b6b8301e5c81479dfcef7be31006e389b38cf73507aa6cb.png" title=" actor types 'TAB' in Input tipo reunion (completed)" width="1366"/>
+                <img src="a81604577c93ae5a8b6b8301e5c81479dfcef7be31006e389b38cf73507aa6cb.png" title=" actor clicks on Input numero de reuni&oacute;n" width="1366"/>
+                <img src="f140c53c46c3ed19f234d81bb18642a664c2fe5456a0897eeffb1d56002798b5.png" title=" actor clicks on Input numero de reuni&oacute;n (completed)" width="1366"/>
+                <img src="f140c53c46c3ed19f234d81bb18642a664c2fe5456a0897eeffb1d56002798b5.png" title=" actor enters '12' into Input numero de reuni&oacute;n" width="1366"/>
+                <img src="02843912e2077910f1afe6ba1cb780c29cc03db01b3dd33e141be1f75d83a52c.png" title=" actor enters '12' into Input numero de reuni&oacute;n (completed)" width="1366"/>
+                <img src="02843912e2077910f1afe6ba1cb780c29cc03db01b3dd33e141be1f75d83a52c.png" title=" actor clicks on Calendario fecha inicial" width="1366"/>
+                <img src="c864f086f2d22e1ad4b24343fa4216fd9465f1e9e7b00cec5edefe36e0944c91.png" title=" actor clicks on Calendario fecha inicial (completed)" width="1366"/>
+                <img src="c864f086f2d22e1ad4b24343fa4216fd9465f1e9e7b00cec5edefe36e0944c91.png" title=" actor clicks on A&ntilde;o fecha inicial" width="1366"/>
+                <img src="383cc189c1f03e0b57e4f7d35131da41631d717195efc986a8c9f8bff1bea667.png" title=" actor clicks on A&ntilde;o fecha inicial (completed)" width="1366"/>
+                <img src="383cc189c1f03e0b57e4f7d35131da41631d717195efc986a8c9f8bff1bea667.png" title=" actor clicks on Seleccionar mes fecha inicial" width="1366"/>
+                <img src="eacf33b38f28dc182e1b4772d4d61a65b08d67b92b349f7dbadfecaa993e1bb4.png" title=" actor clicks on Seleccionar mes fecha inicial (completed)" width="1366"/>
+                <img src="eacf33b38f28dc182e1b4772d4d61a65b08d67b92b349f7dbadfecaa993e1bb4.png" title=" actor clicks on Mes fecha inicial" width="1366"/>
+                <img src="a81c803630ac6f8801c72481f321b4670e909cb146b7a832f13f3df9d9e7a05d.png" title=" actor clicks on Mes fecha inicial (completed)" width="1366"/>
+                <img src="a81c803630ac6f8801c72481f321b4670e909cb146b7a832f13f3df9d9e7a05d.png" title=" actor clicks on Seleccionar mes" width="1366"/>
+                <img src="76eecdcb445a520630756b2668ddfa5f9de4eaa550ce88b3a53c9a1db4b9c7f4.png" title=" actor clicks on Seleccionar mes (completed)" width="1366"/>
+                <img src="76eecdcb445a520630756b2668ddfa5f9de4eaa550ce88b3a53c9a1db4b9c7f4.png" title=" actor clicks on Dia fecha inicial" width="1366"/>
+                <img src="4811a05ea3223078fb24aa9b8076e72a9d6e5747fd52af13b1a0ec21c8c03032.png" title=" actor clicks on Dia fecha inicial (completed)" width="1366"/>
+                <img src="4811a05ea3223078fb24aa9b8076e72a9d6e5747fd52af13b1a0ec21c8c03032.png" title=" actor clicks on Hora inicio" width="1366"/>
+                <img src="2bc871916adb49b19c924e0d0ec3b5a66f0709db72c39eb1343a3270b740f249.png" title=" actor clicks on Hora inicio (completed)" width="1366"/>
+                <img src="2bc871916adb49b19c924e0d0ec3b5a66f0709db72c39eb1343a3270b740f249.png" title=" actor clicks on Seleccionar hora de inicio" width="1366"/>
+                <img src="6fc47c39d390ab881e3a8c4e8cc2b13d0ec231c315c851906ee0df9721e05cd5.png" title=" actor clicks on Seleccionar hora de inicio (completed)" width="1366"/>
+                <img src="6fc47c39d390ab881e3a8c4e8cc2b13d0ec231c315c851906ee0df9721e05cd5.png" title=" actor clicks on Calendario fecha finalizacion" width="1366"/>
+                <img src="b449479dec88ca8403dd4a2824341501b4b9e0c66c1526977c996791377f785b.png" title=" actor clicks on Calendario fecha finalizacion (completed)" width="1366"/>
+                <img src="b449479dec88ca8403dd4a2824341501b4b9e0c66c1526977c996791377f785b.png" title=" actor clicks on A&ntilde;o finalizaci&oacute;n" width="1366"/>
+                <img src="8dd18e7f488c65cf365179f7d449c7f412313252168685909ea5fe3086defaf3.png" title=" actor clicks on A&ntilde;o finalizaci&oacute;n (completed)" width="1366"/>
+                <img src="8dd18e7f488c65cf365179f7d449c7f412313252168685909ea5fe3086defaf3.png" title=" actor clicks on Seleciona a&ntilde;o finalizaci&oacute;n" width="1366"/>
+                <img src="60a08405af5dd094fdb3ca5499a4d71fab40b9c4bc06620bbca6697f01c40cd7.png" title=" actor clicks on Seleciona a&ntilde;o finalizaci&oacute;n (completed)" width="1366"/>
+                <img src="60a08405af5dd094fdb3ca5499a4d71fab40b9c4bc06620bbca6697f01c40cd7.png" title=" actor clicks on Mes finalizaci&oacute;n" width="1366"/>
+                <img src="2be6985400bf21e946d1fc188d7baab4153f0c4d560e9fe7177dde54bc2152d5.png" title=" actor clicks on Mes finalizaci&oacute;n (completed)" width="1366"/>
+                <img src="2be6985400bf21e946d1fc188d7baab4153f0c4d560e9fe7177dde54bc2152d5.png" title=" actor clicks on Selecciona mes finalizaci&oacute;n" width="1366"/>
+                <img src="73bdd6695c13112b35e3af8283e68b9fca8ef4019302fea6f7d2e0598e64b641.png" title=" actor clicks on Selecciona mes finalizaci&oacute;n (completed)" width="1366"/>
+                <img src="73bdd6695c13112b35e3af8283e68b9fca8ef4019302fea6f7d2e0598e64b641.png" title=" actor clicks on Selecina dia finalizaci&oacute;n" width="1366"/>
+                <img src="9d6c9b351288c721090977b3036729b2564f9bc9c3a9911ce633fdb9225dc908.png" title=" actor clicks on Selecina dia finalizaci&oacute;n (completed)" width="1366"/>
+                <img src="9d6c9b351288c721090977b3036729b2564f9bc9c3a9911ce633fdb9225dc908.png" title=" actor clicks on Calendario fecha finalizacion" width="1366"/>
+                <img src="6cd589845f03df21508eb5cdf6494aeb6421d166e2c63de760dfdcdd5b52a907.png" title=" actor clicks on Calendario fecha finalizacion (completed)" width="1366"/>
+                <img src="6cd589845f03df21508eb5cdf6494aeb6421d166e2c63de760dfdcdd5b52a907.png" title=" actor clicks on Hora finalizaci&oacute;n" width="1366"/>
+                <img src="c57afdadb24e753203698d5ce55fcd59667eaf8115cc04cf24c9546fc5528c9b.png" title=" actor clicks on Hora finalizaci&oacute;n (completed)" width="1366"/>
+                <img src="c57afdadb24e753203698d5ce55fcd59667eaf8115cc04cf24c9546fc5528c9b.png" title=" actor clicks on Selecci&oacute;n de hora" width="1366"/>
+                <img src="48837bd06e9b27aac9e8977014735413536b34591253195d899413e32146728f.png" title=" actor clicks on Selecci&oacute;n de hora (completed)" width="1366"/>
+                <img src="48837bd06e9b27aac9e8977014735413536b34591253195d899413e32146728f.png" title=" actor clicks on Men&uacute; ubicaci&oacute;n" width="1366"/>
+                <img src="60f00fddde87680b394e09da0d28e7bef6d85ac03a8d593fce1485eee35bb4ce.png" title=" actor clicks on Men&uacute; ubicaci&oacute;n (completed)" width="1366"/>
+                <img src="60f00fddde87680b394e09da0d28e7bef6d85ac03a8d593fce1485eee35bb4ce.png" title=" actor enters 'HQ-01' into Input Ubicaci&oacute;n" width="1366"/>
+                <img src="fe7af25801d65096fda4af0e9569ba8001b89db1b009c3bfb1851ab186c5d302.png" title=" actor enters 'HQ-01' into Input Ubicaci&oacute;n (completed)" width="1366"/>
+                <img src="fe7af25801d65096fda4af0e9569ba8001b89db1b009c3bfb1851ab186c5d302.png" title=" actor types 'TAB' in Input Ubicaci&oacute;n" width="1366"/>
+                <img src="3f80784e594e535422f59f6530ddfd0dd5dc3c592cf741907d4c00a5c3a67204.png" title=" actor types 'TAB' in Input Ubicaci&oacute;n (completed)" width="1366"/>
+                <img src="3f80784e594e535422f59f6530ddfd0dd5dc3c592cf741907d4c00a5c3a67204.png" title=" actor clicks on Men&uacute; unidad" width="1366"/>
+                <img src="2457a2bc741914afe3718d7ef923e4fab6f159605beee4196408c7a705567dd6.png" title=" actor clicks on Men&uacute; unidad (completed)" width="1366"/>
+                <img src="2457a2bc741914afe3718d7ef923e4fab6f159605beee4196408c7a705567dd6.png" title=" actor enters 'Unidad two' into Input unidad" width="1366"/>
+                <img src="67170a471bd200caf5c3522b5810ae3c936568b4402e64175e5cd5292623e039.png" title=" actor enters 'Unidad two' into Input unidad (completed)" width="1366"/>
+                <img src="67170a471bd200caf5c3522b5810ae3c936568b4402e64175e5cd5292623e039.png" title=" actor types 'TAB' in Input unidad" width="1366"/>
+                <img src="2d232aaee14de79a6ac92cb34a73527663474e3e9ceb16391c62cfa43adf9a90.png" title=" actor types 'TAB' in Input unidad (completed)" width="1366"/>
+                <img src="2d232aaee14de79a6ac92cb34a73527663474e3e9ceb16391c62cfa43adf9a90.png" title=" actor clicks on Men&uacute; organizador" width="1366"/>
+                <img src="6309b9c85e5015c0bee19e1bac926610e4400c486ba1c359c1770d34ab603845.png" title=" actor clicks on Men&uacute; organizador (completed)" width="1366"/>
+                <img src="6309b9c85e5015c0bee19e1bac926610e4400c486ba1c359c1770d34ab603845.png" title=" actor enters 'Sara Torres' into Input oorganizador" width="1366"/>
+                <img src="5ad56d731a36d3c83031176ce7aa1e4a23400c72eca2710220dc204ea4021ea6.png" title=" actor enters 'Sara Torres' into Input oorganizador (completed)" width="1366"/>
+                <img src="5ad56d731a36d3c83031176ce7aa1e4a23400c72eca2710220dc204ea4021ea6.png" title=" actor types 'TAB' in Input oorganizador" width="1366"/>
+                <img src="8121f5a485dd8237a3c829c660427abc9fb19297cfd15746bf3caacdec277a0a.png" title=" actor types 'TAB' in Input oorganizador (completed)" width="1366"/>
+                <img src="8121f5a485dd8237a3c829c660427abc9fb19297cfd15746bf3caacdec277a0a.png" title=" actor clicks on Men&uacute; reportero" width="1366"/>
+                <img src="d032d6a129a5da3deeecccffe66353142543965bae1635f3c24839b3fa62530c.png" title=" actor clicks on Men&uacute; reportero (completed)" width="1366"/>
+                <img src="d032d6a129a5da3deeecccffe66353142543965bae1635f3c24839b3fa62530c.png" title=" actor enters 'james Jones' into Input reportero" width="1366"/>
+                <img src="e0ca76b752e1ec1db9ffbb9c27f34cc9e06ef3e4c16486e9d5db1fa6a98b480f.png" title=" actor enters 'james Jones' into Input reportero (completed)" width="1366"/>
+                <img src="e0ca76b752e1ec1db9ffbb9c27f34cc9e06ef3e4c16486e9d5db1fa6a98b480f.png" title=" actor types 'TAB' in Input reportero" width="1366"/>
+                <img src="de70ee26fa6d7a51cfdede68342996a12e4faad6b67c75c57d22023f7dd38221.png" title=" actor types 'TAB' in Input reportero (completed)" width="1366"/>
+                <img src="de70ee26fa6d7a51cfdede68342996a12e4faad6b67c75c57d22023f7dd38221.png" title=" actor clicks on Men&uacute; asistentes" width="1366"/>
+                <img src="c441e1e09129cc559a4caa36ad350687b01d2f3286eac5a29b95086626590971.png" title=" actor clicks on Men&uacute; asistentes (completed)" width="1366"/>
+                <img src="c441e1e09129cc559a4caa36ad350687b01d2f3286eac5a29b95086626590971.png" title=" actor enters 'Eric Butler' into Input asistentes" width="1366"/>
+                <img src="263adf54e798fbabe537fe1be130ba27d79c511575a08567509e5a5c7714fa64.png" title=" actor enters 'Eric Butler' into Input asistentes (completed)" width="1366"/>
+                <img src="263adf54e798fbabe537fe1be130ba27d79c511575a08567509e5a5c7714fa64.png" title=" actor types 'TAB' in Input asistentes" width="1366"/>
+                <img src="fcbe459b82e8b550af791479937401d68b533c5de6dbef225f547f1a8f8c0cb7.png" title=" actor types 'TAB' in Input asistentes (completed)" width="1366"/>
+                <img src="fcbe459b82e8b550af791479937401d68b533c5de6dbef225f547f1a8f8c0cb7.png" title=" actor clicks on Bot&oacute;n guardar" width="1366"/>
+                <img src="fcbe459b82e8b550af791479937401d68b533c5de6dbef225f547f1a8f8c0cb7.png" title=" Actor programar reunion (completed)" width="1366"/>
+                <img src="fcbe459b82e8b550af791479937401d68b533c5de6dbef225f547f1a8f8c0cb7.png" title=" And el usuario programa la reunion (completed)" width="1366"/>
+                <img src="84a2ba510ce9265f2d7f5a2a814c6e329c06a80c59e0a82b36d098c97f632fef.png" title=" Then la reunion se programara exitosamente" width="1366"/>
+                <img src="84a2ba510ce9265f2d7f5a2a814c6e329c06a80c59e0a82b36d098c97f632fef.png" title=" Then confirmar reunion should be 'Planeacion mensual - 12 - Team Weekly - 09/13/2023 01:45 - 09/13/2023 03:00 - HQ-01 - Unidad two'" width="1366"/>
+                <img src="2af3f6cda36438f8800f51e21bedbdf1f3a5c10378b602f60e6911892520b9c1.png" title=" Then confirmar reunion should be 'Planeacion mensual - 12 - Team Weekly - 09/13/2023 01:45 - 09/13/2023 03:00 - HQ-01 - Unidad two' (completed)" width="1366"/>
+                <img src="2af3f6cda36438f8800f51e21bedbdf1f3a5c10378b602f60e6911892520b9c1.png" title=" Then la reunion se programara exitosamente (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.3.2</span>
+</div>
+</body>
+</html>

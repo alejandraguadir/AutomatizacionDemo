@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="programar reunion" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-09T22:10:42" hostname="CHMEP2CXLR93" time="47.741">
+  <properties/>
+  <testcase name="Programar reunión exitosa" classname="programar reunion" time="47.741"/>
+  <system-out><![CDATA[| nombreUnidad | unidadPrincipal |
+| unidad two   | Branding        |
+
+| nombreReunion      | tipoReunion | numeroReunion | ubicacionReunion | unidadReunion | organizadorReunion | reporteroReunion |
+| Planeacion mensual | Team Weekly | R_12          | HQ-01            | unidad two    | Sara Torres        | James Jones      |
+
+| nombreReunion      | tipoReunion | numeroReunion | ubicacionReunion | unidadReunion | organizadorReunion | reporteroReunion |
+| Planeacion mensual | Team Weekly | R_12          | HQ-01            | unidad two    | Sara Torres        | James Jones      |
+
+Resultados obtenidos:
+Weekly Development Meeting 1
+Team Weekly
+R_12
+HQ-01
+unidad two
+]]></system-out>
+  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 58177
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1691619045.852][WARNING]: This version of ChromeDriver has not been tested with Chrome version 115.
+ago. 09, 2023 5:10:45 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+ago. 09, 2023 5:10:46 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: a no-op implementation
+ago. 09, 2023 5:10:46 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 115.
+ago. 09, 2023 5:10:46 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ago. 09, 2023 5:10:55 P. M. co.com.choucair.ejemplo.stepdefinitions.Demo2StepDefinitions initialConfigurationDektop
+INFO: Ingreso a URL correctamente
+ago. 09, 2023 5:11:01 P. M. co.com.choucair.ejemplo.stepdefinitions.Demo2StepDefinitions elAdministradorIniciaSesion
+INFO: Login realizado correctamente
+ago. 09, 2023 5:11:05 P. M. co.com.choucair.ejemplo.stepdefinitions.Demo2StepDefinitions elAdministradorCreaLaUnidadDeNegocio
+INFO: Menú Unidad de negocio seleccionado correctamente
+ago. 09, 2023 5:11:08 P. M. co.com.choucair.ejemplo.stepdefinitions.Demo2StepDefinitions elAdministradorCreaLaUnidadDeNegocio
+INFO: Menú Unidad de negocio creada correctamente
+ago. 09, 2023 5:11:12 P. M. co.com.choucair.ejemplo.stepdefinitions.Demo2StepDefinitions elAdministradorProgramaLaReunion
+INFO: Menú reunión seleccionada correctamente
+ago. 09, 2023 5:11:28 P. M. co.com.choucair.ejemplo.stepdefinitions.Demo2StepDefinitions elAdministradorProgramaLaReunion
+INFO: Reunion creada correctamente
+]]></system-err>
+</testsuite>
